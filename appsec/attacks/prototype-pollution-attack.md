@@ -1,12 +1,58 @@
 # Prototype Pollution Attack
 
-Сборник вулнов: [https://github.com/BlackFan/client-side-prototype-pollution](https://github.com/BlackFan/client-side-prototype-pollution)
+По другому еще Prototype Poisoning называют
+
+## Prototype in a nutshell
+
+Что такое proto — кто-то решил, что здорово будет иметь специальное поле для описания полей и методов объекта. Сейчас это значится как deprecated, но до сих пор полностью поддерживается. Как это работает:
+
+```javascript
+> const a = { b: 5 }
+> a.b
+5
+> a.__proto__ = { c: 6 }
+> a.c
+6
+> a
+{ b: 5 }
+```
+
+Как мы видим, объект `a` не имеет свойство `c`, но его prototype имеет. Если валидатор проверяет только свойства объекта `a`, то можно обойти этот валидатор.
+
+Другой важной частью этой истории является то, как `JSON.parse()` — утилита, предоставляемая языком для преобразования текста в формате JSON в объекты  — обрабатывает это волшебное имя свойства `__proto__`.
+
+```javascript
+> const text = '{ "b": 5, "__proto__": { "c": 6 } }'
+> const a = JSON.parse(text)
+> a
+{ b: 5, __proto__: { c: 6 } }
+```
+
+В данном случае, поле `__proto__` не ссылка на prototype, а такое же поле как и `b`. Сам по себе объект созданный с помощью `JSON.parse` совершенно безопасен. У него нет собственного прототипа. У него есть, казалось бы, безобидное свойство, которое просто совпадает со встроенным магическим именем JavaScript.
+
+Однако другие методы могут обработать это неожиданным способом:
+
+```javascript
+> const x = Object.assign({}, a)
+> x
+{ b: 5}
+> x.c
+6
+```
+
+Метод `Object.assign` используется для создания копии объекта, помещая все свойства объекта `a` в объект `{}`. И прототип улетает в `x`!
+
+## Tools
 
 Какой-то инструмент: [https://github.com/msrkp/PPScan/](https://github.com/msrkp/PPScan/)
 
+## Статьи
+
+Сборник вулнов: [https://github.com/BlackFan/client-side-prototype-pollution](https://github.com/BlackFan/client-side-prototype-pollution)
+
 Пример и mitigation для этой атаки: [https://www.whitesourcesoftware.com/resources/blog/prototype-pollution-vulnerabilities/](https://www.whitesourcesoftware.com/resources/blog/prototype-pollution-vulnerabilities/)
 
-Пример:
+## Пример
 
 пусть есть js-файл
 
