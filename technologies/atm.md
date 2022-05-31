@@ -6,13 +6,13 @@
 
 NCR — National Cash Register — американская компания, специализирующаяся на специализированной вычислительной технике для розничных сетей, банковской, финансовой, туристической и медицинской отраслей. Основными продуктами по состоянию на 2010-е годы являются платёжные терминалы, банкоматы, POS-терминалы, считыватели штрих-кодов и различные расходные материалы.
 
-site: [https://www.ncr.com/](https://www.ncr.com)
+site: [https://www.ncr.com/](https://www.ncr.com/)
 
 ### Diebold, Incorporated
 
 Diebold, Incorporated — производитель комплексных систем самообслуживания и безопасности для банков и финансовых институтов. Сегодня Diebold разрабатывает и выпускает банкоматы и программное обеспечение к ним.
 
-site: [http://www.dieboldnixdorf.com/](http://www.dieboldnixdorf.com)
+site: [http://www.dieboldnixdorf.com/](http://www.dieboldnixdorf.com/)
 
 ## Programs
 

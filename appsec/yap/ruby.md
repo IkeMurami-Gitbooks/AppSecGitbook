@@ -149,7 +149,7 @@ User.where(:admin => false).group(params[:group])
 В общем, надо просматривать обращение ко всем объектам, унаследованным от ActiveRecord::Base и смотреть обращение к ним через встроенные функции where, find\_by, exists и тп
 
 Подробнее с примерами: [\
-https://rails-sqli.org/](https://rails-sqli.org)
+https://rails-sqli.org/](https://rails-sqli.org/)
 
 ## Command Injection
 

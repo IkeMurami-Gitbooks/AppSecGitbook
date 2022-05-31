@@ -2,7 +2,7 @@
 
 ## Src
 
-link: [https://doc.budagov.ru/](https://doc.budagov.ru)
+link: [https://doc.budagov.ru/](https://doc.budagov.ru/)
 
 Git с bitrix разных версий: [https://github.com/avshatalov48/bitrix-core-business](https://github.com/avshatalov48/bitrix-core-business)
 

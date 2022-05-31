@@ -394,8 +394,6 @@
 * [Компетенции](learning/kompetencii.md)
 * [Материалы SANS & Offensive Security](learning/untitled.md)
 * [Network Pentest Course (youtube)](learning/network-pentest-course-youtube.md)
-* [OffSec](learning/offsec/README.md)
-  * [OSCP](learning/offsec/oscp.md)
 * [Просто норм материалы/gitbooks по пентесту вцелом...](learning/prosto-norm-materialy-gitbooks....md)
 * [Cheat Sheets](learning/cheat-sheets.md)
 * [Тестовые лабы](learning/testovye-laby.md)

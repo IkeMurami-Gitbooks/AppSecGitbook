@@ -37,7 +37,7 @@ Solar AppScreener (до 3.0 — Solar inCode — сканер, который р
 PVS-Studio\
 SonarCube - хорош для codestyle, Java/php, недорогой, используется в pipeline в devops. Работает примерно следующим образом. Есть сервер, есть клиент, который запускаешь у себя локально, он анализирует твой код (лучше всего чтобы был SCM настроен, иначе не взлетит) и отправляет все на сервак, где проводится анализ.\
 AppScan ?\
-SemmleQL: [https://semmle.com/](https://semmle.com)
+SemmleQL: [https://semmle.com/](https://semmle.com/)
 
 По разным языкам таблица: [https://docs.gitlab.com/ee/user/application\_security/sast/](https://docs.gitlab.com/ee/user/application\_security/sast/)
 
@@ -45,13 +45,13 @@ SemmleQL: [https://semmle.com/](https://semmle.com)
 
 JS: **retire.js** - обнаружение использования уязвимых библиотек JS. Распространяется как расширение для chrome.
 
-Brakeman — for RubyOnRails free scanner — [https://brakemanscanner.org/](https://brakemanscanner.org)
+Brakeman — for RubyOnRails free scanner — [https://brakemanscanner.org/](https://brakemanscanner.org/)
 
-Python (от Facebook): Pyre & Pysa [https://pyre-check.org/](https://pyre-check.org)
+Python (от Facebook): Pyre & Pysa [https://pyre-check.org/](https://pyre-check.org/)
 
-Android & Java app (от Facebook): [https://mariana-tren.ch/](https://mariana-tren.ch)
+Android & Java app (от Facebook): [https://mariana-tren.ch/](https://mariana-tren.ch/)
 
-Android, Java, C, C++, ObjC (от Facebook): [https://fbinfer.com/](https://fbinfer.com)
+Android, Java, C, C++, ObjC (от Facebook): [https://fbinfer.com/](https://fbinfer.com/)
 
 Code Verify (от Facebook) — проверяет целостность и какие-то еще ошибки загруженного в браузере веб-приложения [https://github.com/facebookincubator/meta-code-verify/](https://github.com/facebookincubator/meta-code-verify/)
 

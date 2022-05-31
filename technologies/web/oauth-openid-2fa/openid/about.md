@@ -37,4 +37,4 @@ ID-токены никогда не должны отправляться в API
 
 OpenID Debugger — инструмент, с помощью которого можно легко отлаживать запросы к OpenID Connect серверу
 
-Link: [https://oidcdebugger.com/](https://oidcdebugger.com)
+Link: [https://oidcdebugger.com/](https://oidcdebugger.com/)

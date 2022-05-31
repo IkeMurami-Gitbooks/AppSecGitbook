@@ -12,19 +12,19 @@ Here’s a quick way to get up to speed:
 
 **CIS**
 
-* Center for Internet Security ([homepage](https://www.cisecurity.org))
+* Center for Internet Security ([homepage](https://www.cisecurity.org/))
 * CIS Benchmarks ([link](https://www.cisecurity.org/cis-benchmarks/))
 * FAQ ([link](https://www.cisecurity.org/cis-benchmarks/cis-benchmarks-faq/))
 
 **PCI DSS**
 
-* Payment Card Industry ([homepage](https://www.pcisecuritystandards.org))
+* Payment Card Industry ([homepage](https://www.pcisecuritystandards.org/))
 * Data Security Standard ([link](https://www.pcisecuritystandards.org/document\_library))
 * FAQ ([link](https://www.pcicomplianceguide.org/faq/))
 
 **DISA STIG**
 
-* Defense Information Systems Agency ([homepage](https://www.disa.mil))
+* Defense Information Systems Agency ([homepage](https://www.disa.mil/))
 * Security Technical Implementation Guides ([link](https://public.cyber.mil/stigs/))
 * FAQ ([link](https://public.cyber.mil/stigs/faqs/))
 

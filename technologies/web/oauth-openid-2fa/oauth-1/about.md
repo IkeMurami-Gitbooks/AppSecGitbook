@@ -2,7 +2,7 @@
 
 Сайт протокола: [https://oauth.net](https://oauth.net)
 
-Еще один сайт, посвященный этому протоколу: [https://www.oauth.com/](https://www.oauth.com)
+Еще один сайт, посвященный этому протоколу: [https://www.oauth.com/](https://www.oauth.com/)
 
 Если захочу еще что почитать: [https://www.oauth.com/oauth2-servers/map-oauth-2-0-specs/](https://www.oauth.com/oauth2-servers/map-oauth-2-0-specs/)
 

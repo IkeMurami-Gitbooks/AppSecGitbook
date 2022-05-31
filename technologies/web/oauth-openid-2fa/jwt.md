@@ -22,4 +22,4 @@ JWT Security Testing\
 Пример проверок на JWT Security на Python\
 [https://snikt.net/blog/2019/05/16/jwt-signature-vs-mac-attacks/](https://snikt.net/blog/2019/05/16/jwt-signature-vs-mac-attacks/)
 
-Декодер - [https://jwt.io/](https://jwt.io)
+Декодер - [https://jwt.io/](https://jwt.io/)

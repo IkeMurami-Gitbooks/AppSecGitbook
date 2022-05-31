@@ -4,7 +4,7 @@
 
 Links:\
 [https://www.invicti.com/products/](https://www.invicti.com/products/)\
-[https://www.acunetix.com/](https://www.acunetix.com)
+[https://www.acunetix.com/](https://www.acunetix.com/)
 
 Acunetix
 

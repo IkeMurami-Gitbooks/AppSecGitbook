@@ -30,7 +30,7 @@ SpiderFoot (Py) - кучу информации из открытых источ
 theHarvester \
 PublicWWW, RiskIQ
 
-Поиск людей: [https://namechk.com/](https://namechk.com) Тулзы слабенькие, но вдруг: userrecon, sherlock
+Поиск людей: [https://namechk.com/](https://namechk.com/) Тулзы слабенькие, но вдруг: userrecon, sherlock
 
 Hunter.io - поиск почт по домену (Free: 50 запросов/мес)
 
@@ -104,7 +104,7 @@ amass [https://github.com/OWASP/Amass](https://github.com/OWASP/Amass) \
 theHarvester \
 и любые обвязки вокруг (например, aquatone) \
 \+waybackurls and assetfinder\
-dnsdumbster: [https://dnsdumpster.com/](https://dnsdumpster.com)
+dnsdumbster: [https://dnsdumpster.com/](https://dnsdumpster.com/)
 
 ## с2
 

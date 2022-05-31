@@ -10,4 +10,4 @@ python3 -m bandit -r /path/to/sources/
 ```
 
 Wrapper around Flake8/Bandit: [https://github.com/tylerwince/flake8-bandit](https://github.com/tylerwince/flake8-bandit)\
-Bento - find webapp bugs (flask etc): [https://bento.dev/](https://bento.dev)
+Bento - find webapp bugs (flask etc): [https://bento.dev/](https://bento.dev/)

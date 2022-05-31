@@ -6,7 +6,7 @@
 
 Может определяться в заголовке `Content-Security-Policy`, или в теге meta (не все правила можно сюда записать).&#x20;
 
-Есть ресурс, который проверяет, как настроен CSP у вас: [https://csp-evaluator.withgoogle.com/](https://csp-evaluator.withgoogle.com)
+Есть ресурс, который проверяет, как настроен CSP у вас: [https://csp-evaluator.withgoogle.com/](https://csp-evaluator.withgoogle.com/)
 
 Не настроеный CSP вместе с отстутсвием настройки X-Frame-Options -> получаем Clickjacking.
 

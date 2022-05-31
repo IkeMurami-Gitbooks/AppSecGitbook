@@ -8,7 +8,7 @@ GraphQL визуализация [https://apis.guru/graphql-voyager/](https://ap
 
 GraphQL IDE: \
 [https://github.com/prisma-labs/graphql-playground](https://github.com/prisma-labs/graphql-playground)\
-[https://app.graphqleditor.com/](https://app.graphqleditor.com)
+[https://app.graphqleditor.com/](https://app.graphqleditor.com/)
 
 GraphQL коннектится к MongoDB, или вроде же к любой базе?
 

@@ -1,6 +1,6 @@
 # Поиск по логину / имени/компании
 
-namechk - поиск по имени в соц сетях - [https://namechk.com/](https://namechk.com)
+namechk - поиск по имени в соц сетях - [https://namechk.com/](https://namechk.com/)
 
 Поиск пользователей по nickname по более, чем 75 соц сетям (эти инструменты не выглядят очень крутыми, но они хотя бы есть):\
 userrecon (Bash) [https://github.com/issamelferkh/userrecon](https://github.com/issamelferkh/userrecon)\

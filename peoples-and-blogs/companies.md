@@ -4,7 +4,7 @@ Deteact Blog: [https://blog.deteact.com/ru/](https://blog.deteact.com/ru/)
 
 Gitlab Security Blog: [https://about.gitlab.com/blog/categories/security/](https://about.gitlab.com/blog/categories/security/)
 
-nccgroup: [https://research.nccgroup.com/](https://research.nccgroup.com)
+nccgroup: [https://research.nccgroup.com/](https://research.nccgroup.com/)
 
 Fox-IT (a part of nccgroup): [https://blog.fox-it.com](https://blog.fox-it.com)
 
@@ -14,19 +14,19 @@ PortSwigger DailySwig Blog: [https://portswigger.net/daily-swig](https://portswi
 
 PortSwigger Security Research Blog: [https://portswigger.net/research](https://portswigger.net/research)
 
-Wallarm Blog: [https://lab.wallarm.com/](https://lab.wallarm.com)
+Wallarm Blog: [https://lab.wallarm.com/](https://lab.wallarm.com/)
 
 Rhino Security Blog: [https://rhinosecuritylabs.com/blog/](https://rhinosecuritylabs.com/blog/)
 
 Ambionics Security Blog: [https://www.ambionics.io/blog/](https://www.ambionics.io/blog/)
 
-Sensepost [https://sensepost.com/](https://sensepost.com)
+Sensepost [https://sensepost.com/](https://sensepost.com/)
 
-Oversecured [https://oversecured.com/](https://oversecured.com)
+Oversecured [https://oversecured.com/](https://oversecured.com/)
 
-NowSecure [https://www.nowsecure.com/](https://www.nowsecure.com)
+NowSecure [https://www.nowsecure.com/](https://www.nowsecure.com/)
 
-Vulners [https://vulners.com/](https://vulners.com)
+Vulners [https://vulners.com/](https://vulners.com/)
 
 Snyk [https://snyk.io/blog](https://snyk.io/blog)
 
@@ -42,7 +42,7 @@ LunaSec — компания предоставляет SDK для безопа�
 
 
 
-Swimlane — разработчики SOAR системы (инструмент для SOCов) [https://www.swimlane.com/](https://www.swimlane.com). Чем примечательны: у них на github есть неплохие библиотеки для frontend и не только.
+Swimlane — разработчики SOAR системы (инструмент для SOCов) [https://www.swimlane.com/](https://www.swimlane.com/). Чем примечательны: у них на github есть неплохие библиотеки для frontend и не только.
 
 Pucara — аргетинская компания в сфере пентеста ([https://pucara.io/](https://pucara.io/index.html)). Чем примечательно — они консалтеры с сайтом-визиткой, грубо говоря, и у них есть один опенсорсный инструмент — zuthaka.
 

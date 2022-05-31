@@ -1,6 +1,6 @@
 # RiskIQ
 
-site: [https://community.riskiq.com/](https://community.riskiq.com)
+site: [https://community.riskiq.com/](https://community.riskiq.com/)
 
 Предоставляет поиск по куче информации (вроде CommonCrawl?)
 

@@ -5,7 +5,7 @@
 
 Тестовая лаба:\
 [https://github.com/incredibleindishell/SSRF\_Vulnerable\_Lab](https://github.com/incredibleindishell/SSRF\_Vulnerable\_Lab)\
-[https://application.security/](https://application.security)
+[https://application.security/](https://application.security/)
 
 SSRF bible. Cheatsheet от ONSEC\
 [https://repo.zenk-security.com/Techniques%20d.attaques%20%20.%20%20Failles/SSRFbible%20Cheatsheet.pdf](https://repo.zenk-security.com/Techniques%20d.attaques%20%20.%20%20Failles/SSRFbible%20Cheatsheet.pdf)
