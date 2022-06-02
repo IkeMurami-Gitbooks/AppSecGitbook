@@ -374,7 +374,6 @@
   * [Общее](technologies/ci-cd-1/ci-cd.md)
 * [Git](technologies/git/README.md)
   * [Gitlab](technologies/git/gitlab.md)
-* [H2 Database](technologies/h2-database.md)
 * [Honeypots](technologies/honeypots.md)
 * [Kubernetes](technologies/kubernetes.md)
 * [NFC](technologies/nfc.md)
