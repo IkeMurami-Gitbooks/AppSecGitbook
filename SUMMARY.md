@@ -410,7 +410,7 @@
 
 ## Bug Bounty
 
-* [Tips](bug-bounty/tips.md)
+* [Notes](bug-bounty/tips.md)
 * [Browser Plugins](bug-bounty/browser-plugins.md)
 * [Cheat Sheets](bug-bounty/cheat-sheets.md)
 * [Платформы](bug-bounty/untitled.md)
