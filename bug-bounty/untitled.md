@@ -37,3 +37,6 @@ AntiHack\
 
 Public BB: [https://github.com/projectdiscovery/public-bugbounty-programs](https://github.com/projectdiscovery/public-bugbounty-programs)
 
+
+
+[huntr](https://huntr.dev/) — площадка, которая выступает посредником между open source github repos и багхантерами. На сайте есть калькулятор: вбиваем адрес репозитория, получаем информацию, готовы ли они платить за баги через huntr. Если готовы, мы репортим. Если бага и фикс приняты, нам придут деньги. Так же, есть возможность CVE получить.
