@@ -8,3 +8,4 @@ Google Search Scrapper (Python) - больше не работает - [https://
 
 Armory (Python) - позволяет делать обертки над другими тулзами с целью получения с них информации в едином виде (уже содержит внутри некоторые врапперы) [https://github.com/depthsecurity/armory](https://github.com/depthsecurity/armory)
 
+[reNgine](https://github.com/yogeshojha/rengine) — инструмент с красивым UI (в первую очередь UI). Под капотом open source инструменты. Проводит Reconnaissance (subdomains, ips, ports, endpoints, dirsearch, screenshots, nuclei, ...) + OSINT
