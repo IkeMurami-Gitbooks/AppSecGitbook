@@ -6,7 +6,7 @@
 * [Поисковые движки](poiskovye-dvizhki.md)
 * [Построение модели угроз / анализ угроз](postroenie-modeli-ugroz-analiz-ugroz.md)
 * [Платформы оркестрации, автоматизации пентеста](platformy-orkestracii-avtomatizacii-pentesta.md)
-* [Auditing and Compliance](auditing-and-compliance.md)
+* [Audit and Compliance](auditing-and-compliance.md)
 * [Методологии](metodologii/README.md)
   * [Pentest](metodologii/pentest/README.md)
     * [MITRE ATT\&CK](metodologii/pentest/mitre-att-and-ck.md)
