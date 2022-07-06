@@ -271,6 +271,7 @@
     * [HP WebInspect](appsec/tools/dast/hp-webinspect.md)
     * [Burp Enterprise](appsec/tools/dast/burp-enterprise.md)
     * [Wallarm FAST](appsec/tools/dast/wallarm-fast.md)
+  * [RASP](appsec/tools/rasp.md)
   * [API ST](appsec/tools/api-st.md)
   * [OSA/SCA — Open Source Scanners & Dependency Check](appsec/tools/open-source-scanners-and-dependency-check.md)
   * [Scanners](appsec/tools/scanners.md)
