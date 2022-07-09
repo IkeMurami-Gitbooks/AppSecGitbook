@@ -7,6 +7,7 @@
 * [Построение модели угроз / анализ угроз](postroenie-modeli-ugroz-analiz-ugroz.md)
 * [Платформы оркестрации, автоматизации пентеста](platformy-orkestracii-avtomatizacii-pentesta.md)
 * [Audit and Compliance](auditing-and-compliance.md)
+* [SSDLC](ssdlc.md)
 * [Методологии](metodologii/README.md)
   * [Pentest](metodologii/pentest/README.md)
     * [MITRE ATT\&CK](metodologii/pentest/mitre-att-and-ck.md)
