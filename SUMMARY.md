@@ -415,7 +415,7 @@
 * [Notes](bug-bounty/tips.md)
 * [Browser Plugins](bug-bounty/browser-plugins.md)
 * [Cheat Sheets](bug-bounty/cheat-sheets.md)
-* [Платформы](bug-bounty/untitled.md)
+* [Платформы](bug-bounty/platforms.md)
 * [Specific tools](bug-bounty/specific-tools.md)
 
 ## Hardware/IoT <a href="#iot" id="iot"></a>

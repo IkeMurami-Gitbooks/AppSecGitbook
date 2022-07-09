@@ -44,3 +44,5 @@ Public BB: [https://github.com/projectdiscovery/public-bugbounty-programs](https
 [Immunefi](https://immunefi.com/) — Blockchain BugBounty Platform
 
 [diclose.io](https://disclose.io/) — Платформа, которая помогает дисклозить баги. Это некоммерческая организация, ее запустил сео багкрауда. &#x20;
+
+[hats.finance](https://hats.finance/) — Decentrilized smart bug bounty marketplace — у них есть такая система: кто заинтересован в исследовании какого-то протокола или контракта спонсирует его, исследователи находят баги в проектах.
