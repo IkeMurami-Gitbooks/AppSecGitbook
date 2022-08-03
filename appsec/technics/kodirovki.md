@@ -23,7 +23,7 @@
         <div id="sploit">https://google.com/&#x202E;https://example.com/rtlo</div>
         <a href="#" onclick="CopyToClipboard('sploit');return false;">Copy Sploit</a><br><br>
         <!-- Этот текст не должен разворачиваться (см как в телеге это отобразится) -->
-        <div id="sample">&#x202E;1234</div>
+        <div id="sample">demo&#x202E;1234</div>
         <a href="#" onclick="CopyToClipboard('sample');return false;">Copy Text</a>
         <script>
             function CopyToClipboard(id)

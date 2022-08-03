@@ -4,3 +4,10 @@ MONARC - фреймворк для управления рисками - выг�
 
 OWASP Threat Dragon (JS) - для построения диаграм моделей угроз и тп [https://github.com/mike-goodwin/owasp-threat-dragon-desktop](https://github.com/mike-goodwin/owasp-threat-dragon-desktop)
 
+STRIDE
+
+MITRE ATT\&CK
+
+Google Building Secure and Reliable Systems
+
+Octave
