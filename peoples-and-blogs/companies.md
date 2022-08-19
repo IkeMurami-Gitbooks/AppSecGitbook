@@ -57,3 +57,5 @@ Aquasec — CloudSec компания и разработчик решений �
 
 
 Synacktiv — французкая компания [https://www.synacktiv.com](https://www.synacktiv.com)
+
+Decurity — занимаются анализом defi решений: [https://decurity.io/](https://decurity.io/)
