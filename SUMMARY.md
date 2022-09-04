@@ -205,6 +205,7 @@
       * [RCE in DOMPDF](appsec/client-side-vulnerabilities/xss/attacks/rce-in-dompdf.md)
       * [\[висячая разметка\] Dangling markup injection](appsec/client-side-vulnerabilities/xss/attacks/chto-to-s-yakorem-dangling-markup-injection.md)
       * [CSS injection](appsec/client-side-vulnerabilities/xss/attacks/css-injection.md)
+      * [jQuery XSS](appsec/client-side-vulnerabilities/xss/attacks/jquery-xss.md)
     * [Tools](appsec/client-side-vulnerabilities/xss/tools.md)
     * [Cheat Sheets](appsec/client-side-vulnerabilities/xss/cheat-sheets.md)
     * [Papers](appsec/client-side-vulnerabilities/xss/papers.md)

