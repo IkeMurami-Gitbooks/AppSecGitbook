@@ -4,7 +4,13 @@
 
 Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they’re currently authenticated.
 
-## Примеры использования
+Необходимые условия возникновения CSRF атаки (если этого нет, можно даже не тестировать эту уязвимость):
+
+* Интересное действие для CSRF атаки
+* Cookie based сессия (или токены/сертификаты, которые доставляются приложением автоматически)
+* Никаких параметров в запросе, которые нельзя предугадать
+
+## Attack Examples
 
 ### Общий
 
@@ -169,7 +175,7 @@ CSRF tokens should be:
 
 Безопаснее передавать CSRF токены в заголовках запроса. Не рекомендуется передавать CSRF токены в query-параметрах (в GET запросах, в частности): токен может утечь разными путями — логи, история браузера.
 
-## Stateless Software
+### Stateless Software
 
 Есть техника Double Submit Cookie.&#x20;
 
