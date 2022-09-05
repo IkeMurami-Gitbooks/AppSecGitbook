@@ -216,6 +216,7 @@
   * [Eval-based Injections](appsec/client-side-vulnerabilities/eval-based-injections.md)
   * [Serialization](appsec/client-side-vulnerabilities/serialization.md)
   * [Incorrect work with location](appsec/client-side-vulnerabilities/incorrect-work-with-location.md)
+  * [Clickjacking (UI redressing)](appsec/client-side-vulnerabilities/clickjacking-ui-redressing.md)
 * [Technics](appsec/technics/README.md)
   * [Кодировки](appsec/technics/kodirovki.md)
   * [Inject Payloads](appsec/technics/inject-payloads/README.md)
