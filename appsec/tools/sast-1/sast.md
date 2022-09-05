@@ -55,6 +55,8 @@ Android, Java, C, C++, ObjC (от Facebook): [https://fbinfer.com/](https://fbin
 
 Code Verify (от Facebook) — проверяет целостность и какие-то еще ошибки загруженного в браузере веб-приложения [https://github.com/facebookincubator/meta-code-verify/](https://github.com/facebookincubator/meta-code-verify/)
 
+infer (от Facebook) — еще какой-то анализатор [https://github.com/facebook/infer](https://github.com/facebook/infer)
+
 ### semgrep
 
 **Semgrep**: сканер исходного кода. Есть куча модулей (1к+), создаваемых сообществом. Не раз уже видел ссылку на эту тулзу: [https://github.com/returntocorp/semgrep](https://github.com/returntocorp/semgrep)
