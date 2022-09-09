@@ -6,22 +6,6 @@ Checkmarx \
 Fortify (for Java) — запускать лучше через Audit Workbench. (@ramon93i7 рекомендует)\
 Coverity
 
-## Темная лошадка
-
-CodeQL + Semgrep — вроде как куда лучше Checkmarx, тк:
-
-* Код открыт
-* Правила активно пополняются сообществом (в том числе через h1 и github)
-* Активно поддерживается и используется Github для скана репозиториев
-
-Подробно: [https://habr.com/ru/company/swordfish\_security/blog/541554/](https://habr.com/ru/company/swordfish\_security/blog/541554/)\
-[https://securitylab.github.com/tools/codeql/](https://securitylab.github.com/tools/codeql/)\
-[https://github.com/github/codeql](https://github.com/github/codeql)
-
-Есть плагины для vscode для работы с этими SAST'ами
-
-На Github в фильтре по языкам можно вбить `CodeQL` и найти примеры скриптов для анализатора.
-
 ## Mobile SAST
 
 mobsfscan = semgrep + libsast: [https://github.com/MobSF/mobsfscan](https://github.com/MobSF/mobsfscan)
@@ -36,8 +20,7 @@ Solar AppScreener (до 3.0 — Solar inCode — сканер, который р
 
 PVS-Studio\
 SonarCube - хорош для codestyle, Java/php, недорогой, используется в pipeline в devops. Работает примерно следующим образом. Есть сервер, есть клиент, который запускаешь у себя локально, он анализирует твой код (лучше всего чтобы был SCM настроен, иначе не взлетит) и отправляет все на сервак, где проводится анализ.\
-AppScan ?\
-SemmleQL: [https://semmle.com/](https://semmle.com/)
+AppScan ?
 
 По разным языкам таблица: [https://docs.gitlab.com/ee/user/application\_security/sast/](https://docs.gitlab.com/ee/user/application\_security/sast/)
 

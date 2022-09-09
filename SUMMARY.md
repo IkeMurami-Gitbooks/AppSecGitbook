@@ -254,6 +254,7 @@
     * [About](appsec/tools/sast-1/about.md)
     * [SAST List](appsec/tools/sast-1/sast.md)
     * [Python: Bandit](appsec/tools/sast-1/python-bandit.md)
+    * [CodeQL](appsec/tools/sast-1/codeql.md)
     * [Checkmarx](appsec/tools/sast-1/checkmarx.md)
   * [DAST](appsec/tools/dast/README.md)
     * [About](appsec/tools/dast/about.md)
