@@ -79,6 +79,7 @@
 * [Common](appsec/common/README.md)
   * [Типовая последовательность действий](appsec/common/tipovaya-posledovatelnost-deistvii.md)
   * [Common Go Tools](appsec/common/common-go-tools.md)
+  * [Guidelines](appsec/common/guidelines.md)
 * [Automated WebApp Pentest](appsec/automated-webapp-pentest/README.md)
   * [Burp Suite](appsec/automated-webapp-pentest/burp-suite/README.md)
     * [Режимы в Intruder](appsec/automated-webapp-pentest/burp-suite/rezhimy-v-intruder.md)
