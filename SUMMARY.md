@@ -237,7 +237,6 @@
   * [Сброс пароля через email](appsec/voprosy/sbros-parolya-cherez-email.md)
 * [ЯП](appsec/yap/README.md)
   * [Secure Coding Guides](appsec/yap/secure-coding-guides.md)
-  * [ASP.NET / IIS](appsec/yap/asp.net.md)
   * [JS](appsec/yap/js-1/README.md)
     * [Search links](appsec/yap/js-1/js.md)
     * [RCE on Desktop Clients (ex: win)](appsec/yap/js-1/rce-on-desktop-clients-ex-win.md)
