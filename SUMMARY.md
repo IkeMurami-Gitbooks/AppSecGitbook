@@ -148,6 +148,7 @@
         * [База CommonCrawl](appsec/attacks/osint/tools/raznoe/baza-crawl-html-data.md)
         * [ТОП сайтов](appsec/attacks/osint/tools/raznoe/top-saitov.md)
     * [Papers](appsec/attacks/osint/papers.md)
+  * [OS Command Injection](appsec/attacks/os-command-injection.md)
   * [Path Traversal](appsec/attacks/path-traversal.md)
   * [Phishing](appsec/attacks/phishing.md)
   * [Race Condition](appsec/attacks/race-condition.md)
