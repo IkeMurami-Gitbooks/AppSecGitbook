@@ -97,6 +97,7 @@
     * [Papers](appsec/automated-webapp-pentest/burp-suite/papers.md)
     * [Tips](appsec/automated-webapp-pentest/burp-suite/tips.md)
 * [Attacks](appsec/attacks/README.md)
+  * [Broken Access Control](appsec/attacks/broken-access-control.md)
   * [Bruteforce \[credentials\]](appsec/attacks/bruteforce/README.md)
     * [About](appsec/attacks/bruteforce/about.md)
     * [Papers & Books](appsec/attacks/bruteforce/papers-and-books.md)
