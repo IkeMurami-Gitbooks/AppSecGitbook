@@ -10,6 +10,10 @@ description: >-
 
 DVCS-Ripper (Perl) - Git web crawling [https://github.com/kost/dvcs-ripper](https://github.com/kost/dvcs-ripper)
 
+```
+docker run --rm -it -v /path/to/host/work:/work:rw k0st/alpine-dvcs-ripper rip-git.pl -v -u http://www.example.org/.git
+```
+
 ## Screen Web Crawling
 
 #### Aquatone
