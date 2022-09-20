@@ -77,6 +77,8 @@ gal (Bash): [https://github.com/YashGoti/gal](https://github.com/YashGoti/gal)
 
 zile (Python) [https://github.com/xyele/zile](https://github.com/xyele/zile)
 
+detect-secrets (Python) [https://github.com/Yelp/detect-secrets](https://github.com/Yelp/detect-secrets)
+
 ## JS change monitoring
 
 JSMon (Python) - мониторим изменение скриптов  на сайте. В случае изменений -> получаем оповещение в телеграмм. [https://github.com/robre/jsmon](https://github.com/robre/jsmon)
