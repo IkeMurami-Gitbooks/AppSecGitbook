@@ -58,6 +58,7 @@
 * [Расширения файлов, которые можно искать](payloads/rasshireniya-failov-kotorye-mozhno-iskat.md)
 * [Bypass Something](payloads/bypass-something/README.md)
   * [bypass dot](payloads/bypass-something/bypass-dot.md)
+  * [40x bypass](payloads/bypass-something/40x-bypass.md)
 
 ## Network
 
