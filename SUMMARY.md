@@ -50,6 +50,7 @@
   * [Поддомены](payloads/payloads/poddomeny.md)
   * [Пароли по умолчанию](payloads/payloads/paroli-po-umolchaniyu.md)
   * [usernames & logins](payloads/payloads/usernames-and-logins.md)
+  * [Headers](payloads/payloads/headers.md)
   * [RCE](payloads/payloads/rce.md)
   * [XXE](payloads/payloads/xxe.md)
   * [XXS](payloads/payloads/xxs.md)

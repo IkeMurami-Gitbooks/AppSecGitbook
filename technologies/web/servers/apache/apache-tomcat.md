@@ -38,6 +38,10 @@ Tomcat сразу деплоит (позволяет исполнять при �
 $ godofwar -p cmd_geet
 ```
 
+## Tools
+
+Apache Tomcat Vulnerability Scanner: [https://github.com/p0dalirius/ApacheTomcatScanner](https://github.com/p0dalirius/ApacheTomcatScanner)
+
 ## CVEs
 
 ### dot-dot-semicolon /..;/
