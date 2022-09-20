@@ -350,6 +350,7 @@
     * [JWT](technologies/web/oauth-openid-2fa/jwt.md)
   * [Servers](technologies/web/servers/README.md)
     * [Oracle WebLogic](technologies/web/servers/oracle-weblogic.md)
+    * [Jetty](technologies/web/servers/jetty.md)
     * [JBoss (WildFly)](technologies/web/servers/jboss-wildfly.md)
     * [Nginx](technologies/web/servers/nginx.md)
     * [Apache](technologies/web/servers/apache/README.md)
