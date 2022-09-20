@@ -23,7 +23,4 @@ GitHub: [https://github.com/assetnote/wordlists](https://github.com/assetnote/wo
 
 
 
-
-
-
-
+Какой-то сборник отовсюду: [https://github.com/six2dez/OneListForAll](https://github.com/six2dez/OneListForAll)
