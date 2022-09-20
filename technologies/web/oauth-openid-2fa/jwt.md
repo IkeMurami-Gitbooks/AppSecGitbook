@@ -14,7 +14,7 @@ Access Token — от 5 минут до суток
 
 Refresh Token — до месяца
 
-## Some tips & tools
+## Some Notes & tools
 
 JWT Security Testing\
 [https://mazinahmed.net/blog/breaking-jwt/](https://mazinahmed.net/blog/breaking-jwt/)
@@ -23,3 +23,5 @@ JWT Security Testing\
 [https://snikt.net/blog/2019/05/16/jwt-signature-vs-mac-attacks/](https://snikt.net/blog/2019/05/16/jwt-signature-vs-mac-attacks/)
 
 Декодер - [https://jwt.io/](https://jwt.io/)
+
+Про токены, JSON Web Tokens (JWT), аутентификацию и авторизацию. Token-Based Authentication: [https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc](https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc)
