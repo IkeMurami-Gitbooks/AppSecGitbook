@@ -18,5 +18,5 @@ ImmuniWeb (скорее всего, пиздец) [https://www.immuniweb.com/](h
 
 Nuclei (Go): сканим на предмет CVE, уязвимостей. Конфигурируется через YML: [https://github.com/projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)&#x20;
 
-&#x20;
+&#x20;Grype — сканер образов, файоловой системы и сторонних пакетов на ряде языков [https://github.com/anchore/grype](https://github.com/anchore/grype)
 
