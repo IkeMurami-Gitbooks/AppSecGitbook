@@ -25,3 +25,16 @@ JWT Security Testing\
 Декодер - [https://jwt.io/](https://jwt.io/)
 
 Про токены, JSON Web Tokens (JWT), аутентификацию и авторизацию. Token-Based Authentication: [https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc](https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc)
+
+## Attacks
+
+### Key Confusion Attack
+
+Исходные: JWT токен, поддерживает HS и RS алгоритмы подписи.
+
+Находим публичный ключ (например, в `/.well-known/jwks.json`), кодируем его в нужный формат, переставляем алгоритм подписи в HS и подписываем на этом ключе как на секрете.&#x20;
+
+С какой-то долей вероятности, на стороне сервера, в качестве секрета (по заголовку) возьмется открытый ключ, а в коде на этапе проверки посмотрят на заголовок alg и проверят на этом секрете — PROFIT.
+
+Lab of PortSwigger: [https://portswigger.net/web-security/jwt/algorithm-confusion](https://portswigger.net/web-security/jwt/algorithm-confusion)
+
