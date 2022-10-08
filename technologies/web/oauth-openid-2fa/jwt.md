@@ -6,15 +6,13 @@ JWT: [https://research.securitum.com/jwt-json-web-token-security/](https://resea
 
 ![](<../../../.gitbook/assets/изображение (15).png>)
 
-Еще кейс: пусть у нас `alg` установлен в какой-нибудь ассиметричный алгоритм. Меняем алгоритм на `HS256` и используем открытый ключ как секрет. Пример: [https://hackerone.com/reports/1210502](https://hackerone.com/reports/1210502)
-
 ## Время жизни токенов
 
 Access Token — от 5 минут до суток
 
 Refresh Token — до месяца
 
-## Some Notes & tools
+## Some Notes & Tools
 
 JWT Security Testing\
 [https://mazinahmed.net/blog/breaking-jwt/](https://mazinahmed.net/blog/breaking-jwt/)
@@ -38,3 +36,4 @@ JWT Security Testing\
 
 Lab of PortSwigger: [https://portswigger.net/web-security/jwt/algorithm-confusion](https://portswigger.net/web-security/jwt/algorithm-confusion)
 
+Пример: [https://hackerone.com/reports/1210502](https://hackerone.com/reports/1210502)
