@@ -24,6 +24,8 @@ JWT Security Testing\
 
 Про токены, JSON Web Tokens (JWT), аутентификацию и авторизацию. Token-Based Authentication: [https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc](https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc)
 
+JSON Object Signing and Encryption (JOSE) — проект, в котором перечислены все возможные параметры JWT и операции над ними: [https://www.iana.org/assignments/jose/jose.xhtml](https://www.iana.org/assignments/jose/jose.xhtml)
+
 ## Attacks
 
 ### Key Confusion Attack
