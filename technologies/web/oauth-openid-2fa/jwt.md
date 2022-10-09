@@ -26,6 +26,9 @@ JWT Security Testing\
 
 JSON Object Signing and Encryption (JOSE) — проект, в котором перечислены все возможные параметры JWT и операции над ними: [https://www.iana.org/assignments/jose/jose.xhtml](https://www.iana.org/assignments/jose/jose.xhtml)
 
+Библиотека для работы с JWT, JWS, JWK, ... — [jwcrypto](https://jwcrypto.readthedocs.io/en/latest/).\
+Примеры использования можно [найти](https://github.com/latchset/jwcrypto/issues/14) в тестах к этой библиотеки.
+
 ## Attacks
 
 ### Key Confusion Attack
