@@ -26,6 +26,7 @@
   * [Companies](peoples-and-blogs/companies.md)
   * [Mobile](peoples-and-blogs/mobile.md)
   * [People & Gitbooks](peoples-and-blogs/gitbooks.md)
+  * [Podcasts](peoples-and-blogs/podcasts.md)
 * [Базы уязвимостей](bazy-uyazvimostei/README.md)
   * [vulners](bazy-uyazvimostei/vulners.md)
   * [zero.today](bazy-uyazvimostei/zero.today.md)
