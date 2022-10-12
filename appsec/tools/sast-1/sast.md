@@ -55,7 +55,7 @@ semgrep --config "p/golang" -l go -f /path/to/custom/rules1 -f /path/to/custom/r
 
 Устанавливается semgrep через pip: `python3 -m pip install semgrep`.
 
-
+Semgrep + Ghidra = Search Binary Weaks: [https://security.humanativaspa.it/automating-binary-vulnerability-discovery-with-ghidra-and-semgrep/](https://security.humanativaspa.it/automating-binary-vulnerability-discovery-with-ghidra-and-semgrep/)
 
 
 
