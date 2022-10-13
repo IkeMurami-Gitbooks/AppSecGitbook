@@ -33,12 +33,6 @@ AntiHack\
 Найти компании с открытыми bb программами\
 [https://github.com/sushiwushi/bug-bounty-dorks/](https://github.com/sushiwushi/bug-bounty-dorks/)
 
-
-
-Public BB: [https://github.com/projectdiscovery/public-bugbounty-programs](https://github.com/projectdiscovery/public-bugbounty-programs)
-
-
-
 [huntr](https://huntr.dev/) — площадка, которая выступает посредником между open source github repos и багхантерами. На сайте есть калькулятор: вбиваем адрес репозитория, получаем информацию, готовы ли они платить за баги через huntr. Если готовы, мы репортим. Если бага и фикс приняты, нам придут деньги. Так же, есть возможность CVE получить.
 
 [Immunefi](https://immunefi.com/) — Blockchain BugBounty Platform (платят в крипте)
@@ -48,3 +42,30 @@ Public BB: [https://github.com/projectdiscovery/public-bugbounty-programs](https
 [hats.finance](https://hats.finance/) — Decentrilized smart bug bounty marketplace — у них есть такая система: кто заинтересован в исследовании какого-то протокола или контракта спонсирует его, исследователи находят баги в проектах.
 
 [code4rena](https://code4rena.com/) — между bb и пентестами. Открывается программа (смарт-контракты?), в течение какого-то короткого времени (сессия) ресерчеры ищут баги. Программа закрывается, баги ранжируются, объединяются дубликаты. В чем особенность: сумма за дубликаты делится поровну.
+
+### Self Hosted
+
+List: [https://chaos.projectdiscovery.io/](https://chaos.projectdiscovery.io/)\
+Public BB (это тот же список, но github?): [https://github.com/projectdiscovery/public-bugbounty-programs](https://github.com/projectdiscovery/public-bugbounty-programs)
+
+На [disclose.io](https://disclose.io) можно поискать self hosted компании.
+
+## Ru
+
+[bugbounty.ru](https://bugbounty.ru) — платформа от ООО Киберполигон, сейчас тут доступны Тинькофф, СберМаркет и Консоль.ПРО
+
+[https://standoff365.com/](https://standoff365.com/) — платформа от Positive Technologies. Сейчас сюда залетели сервисы VK, Рамблер и PT
+
+[https://app.bugbounty.bi.zone/companies](https://app.bugbounty.bi.zone/companies) — платформа от BI.ZONE. Пока здесь стартуют приватки. Вроде как Авито хотел сюда залететь, ну и ожидаемо СберТех (но это не точно).
+
+### Self Hosted
+
+WildBerries: [https://www.wildberries.ru/services/bug-bounty](https://www.wildberries.ru/services/bug-bounty)
+
+Yandex: [https://yandex.ru/bugbounty/](https://yandex.ru/bugbounty/)
+
+СКБ Контур: [https://kontur.ru/bugbounty](https://kontur.ru/bugbounty)
+
+Мамба: [https://corp.mamba.ru/ru/developer/security](https://corp.mamba.ru/ru/developer/security)
+
+JIVO: [https://www.jivo.ru/bugbounty/](https://www.jivo.ru/bugbounty/)
