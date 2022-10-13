@@ -65,3 +65,8 @@ To exploit the postMessage() vulnerabilities, first, it is required to know if t
 4. **Using** [**Posta**](https://github.com/benso-io/posta)**:** Posta is a tool for researching Cross-document Messaging communication. It allows you to track, explore and exploit `postMessage` vulnerabilities, and includes features such as replaying messages sent between windows within any attached browser.
 5. **Using** [**PMHook**](https://github.com/yehgdotnet/postmessagehook)**:** PMHook is a client-side JavaScript library designed to be used with TamperMonkey in the Chrome web browser. Executed immediately at page load, PMHook wraps the **EventTarget.addEventListener** method and logs any subsequent message event handers as they are added. The event handler functions themselves are also wrapped to log messages received by each handler.
 
+Если надо проверить быстренько, что post messages шлются на странице, можно в консоли вбить и ловить сообщения:
+
+```
+window.addEventListener('message', data => console.log(data))
+```
