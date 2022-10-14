@@ -69,3 +69,7 @@ Yandex: [https://yandex.ru/bugbounty/](https://yandex.ru/bugbounty/)
 Мамба: [https://corp.mamba.ru/ru/developer/security](https://corp.mamba.ru/ru/developer/security)
 
 JIVO: [https://www.jivo.ru/bugbounty/](https://www.jivo.ru/bugbounty/)
+
+## Другие способы подзаработать
+
+Можно поискать проектную работу на Upwork: [https://www.upwork.com/](https://www.upwork.com/)
