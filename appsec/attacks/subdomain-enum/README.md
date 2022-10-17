@@ -146,3 +146,12 @@ massdns - очень быстрое сканирование поддомено�
 crt.sh/?q=\<query> - поиск по сертам зарегистрированные домены
 
 SecurityTrails.com - охеренный сайт для поиска поддоменов и IP
+
+### Мутаторы
+
+altdns
+
+dnsgen
+
+regulator: [https://cramppet.github.io/regulator/index.html](https://cramppet.github.io/regulator/index.html)
+

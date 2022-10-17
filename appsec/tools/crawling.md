@@ -106,4 +106,3 @@ server.Serve(projectpath)  // не понятно, как этим пользо�
 
 ## Analyze webpack bundle (blackbox)
 
-GradeJS
