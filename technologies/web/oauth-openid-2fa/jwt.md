@@ -67,7 +67,16 @@ JSON Object Signing and Encryption (JOSE) — проект, в котором п
 
 Пример: [https://portswigger.net/web-security/jwt](https://portswigger.net/web-security/jwt), смотри про `Injecting self-signed JWTs via the jwk parameter`.
 
-### Key Confusion Attack
+### Inject into kid header
+
+kid нужен в тех случаях, когда на стороне сервера используются несколько секретов для работы с шифрованием и подписями.
+
+Стандарт JWT не регламентирует, что такое kid и каким образом и где он должен хранится. Как результат, в этом месте поверхность атаки может расширится, а именно:
+
+* Если kid — это файл, то можно попробовать сделать path traversal. Например: `../../../../../../../dev/null` и подписываем токен на null-байте на алгоритме HS256, например.
+* Если kid хранится в базе, можно попробовать сделать SQLi.
+
+### JWT Algorithm Confusion Attack
 
 Исходные: JWT токен, поддерживает HS и RS алгоритмы подписи.
 
@@ -78,3 +87,17 @@ JSON Object Signing and Encryption (JOSE) — проект, в котором п
 Lab of PortSwigger: [https://portswigger.net/web-security/jwt/algorithm-confusion](https://portswigger.net/web-security/jwt/algorithm-confusion)
 
 Пример: [https://hackerone.com/reports/1210502](https://hackerone.com/reports/1210502)
+
+### Другие интересные заголовки, приводящие к атакам
+
+#### cty
+
+cty (Content Type) - Sometimes used to declare a media type for the content in the JWT payload. This is usually omitted from the header, but the underlying parsing library may support it anyway. If you have found a way to bypass signature verification, you can try injecting a `cty` header to change the content type to `text/xml` or `application/x-java-serialized-object`, which can potentially enable new vectors for [XXE](https://portswigger.net/web-security/xxe) and [deserialization](https://portswigger.net/web-security/deserialization) attacks.
+
+#### x5c
+
+`x5c` (X.509 Certificate Chain) - Sometimes used to pass the X.509 public key certificate or certificate chain of the key used to digitally sign the JWT. This header parameter can be used to inject self-signed certificates, similar to the [`jwk` header injection](https://portswigger.net/web-security/jwt#injecting-self-signed-jwts-via-the-jwk-parameter) attacks discussed above. Due to the complexity of the X.509 format and its extensions, parsing these certificates can also introduce vulnerabilities. Details of these attacks are beyond the scope of these materials, but for more details, check out [CVE-2017-2800](https://talosintelligence.com/vulnerability\_reports/TALOS-2017-0293) and [CVE-2018-2633](https://mbechler.github.io/2018/01/20/Java-CVE-2018-2633).
+
+## Mitigations
+
+См внизу: [https://portswigger.net/web-security/jwt](https://portswigger.net/web-security/jwt)
