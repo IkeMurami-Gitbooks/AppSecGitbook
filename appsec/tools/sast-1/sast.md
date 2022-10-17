@@ -40,6 +40,8 @@ Code Verify (от Facebook) — проверяет целостность и к�
 
 infer (от Facebook) — еще какой-то анализатор [https://github.com/facebook/infer](https://github.com/facebook/infer)
 
+wiggle — ищет интересную функциональность в C/C++ проектах (от Google Project Zero): [https://github.com/googleprojectzero/weggli](https://github.com/googleprojectzero/weggli)&#x20;
+
 ### semgrep
 
 **Semgrep**: сканер исходного кода. Есть куча модулей (1к+), создаваемых сообществом. Не раз уже видел ссылку на эту тулзу: [https://github.com/returntocorp/semgrep](https://github.com/returntocorp/semgrep)
