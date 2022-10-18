@@ -88,6 +88,12 @@ Lab of PortSwigger: [https://portswigger.net/web-security/jwt/algorithm-confusio
 
 Пример: [https://hackerone.com/reports/1210502](https://hackerone.com/reports/1210502)
 
+И даже если мы не знаем публичный ключ(и), имея два JWT с подписью RSA, можем восстановить публичный ключ сервера (CVE-2017-11424). Получить публичные ключи можем с помощью специально подготовленного Docker-контейнера:
+
+```
+docker run --rm -it portswigger/sig2n <token1> <token2>
+```
+
 ### Другие интересные заголовки, приводящие к атакам
 
 #### cty
