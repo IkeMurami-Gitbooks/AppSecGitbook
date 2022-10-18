@@ -34,23 +34,6 @@ Access Token — от 5 минут до суток
 
 Refresh Token — до месяца
 
-## Some Notes & Tools
-
-JWT Security Testing\
-[https://mazinahmed.net/blog/breaking-jwt/](https://mazinahmed.net/blog/breaking-jwt/)
-
-Пример проверок на JWT Security на Python\
-[https://snikt.net/blog/2019/05/16/jwt-signature-vs-mac-attacks/](https://snikt.net/blog/2019/05/16/jwt-signature-vs-mac-attacks/)
-
-Декодер - [https://jwt.io/](https://jwt.io/)
-
-Про токены, JSON Web Tokens (JWT), аутентификацию и авторизацию. Token-Based Authentication: [https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc](https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc)
-
-JSON Object Signing and Encryption (JOSE) — проект, в котором перечислены все возможные параметры JWT и операции над ними: [https://www.iana.org/assignments/jose/jose.xhtml](https://www.iana.org/assignments/jose/jose.xhtml)
-
-Библиотека для работы с JWT, JWS, JWK, ... — [jwcrypto](https://jwcrypto.readthedocs.io/en/latest/).\
-Примеры использования можно [найти](https://github.com/latchset/jwcrypto/issues/14) в тестах к этой библиотеки.
-
 ## Attacks
 
 ### Set alg=none
@@ -107,3 +90,17 @@ cty (Content Type) - Sometimes used to declare a media type for the content in t
 ## Mitigations
 
 См внизу: [https://portswigger.net/web-security/jwt](https://portswigger.net/web-security/jwt)
+
+## Some Notes & Tools
+
+Декодер - [https://jwt.io/](https://jwt.io/)
+
+Про токены, JSON Web Tokens (JWT), аутентификацию и авторизацию. Token-Based Authentication: [https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc](https://gist.github.com/zmts/802dc9c3510d79fd40f9dc38a12bccfc)
+
+JSON Object Signing and Encryption (JOSE) — проект, в котором перечислены все возможные параметры JWT и операции над ними: [https://www.iana.org/assignments/jose/jose.xhtml](https://www.iana.org/assignments/jose/jose.xhtml)
+
+Библиотека для работы с JWT, JWS, JWK, ... — [jwcrypto](https://jwcrypto.readthedocs.io/en/latest/).\
+Примеры использования можно [найти](https://github.com/latchset/jwcrypto/issues/14) в тестах к этой библиотеки.\
+Мои примеры работы с этой библиотекой (реализовывал атаки на JWT).
+
+JWT Security Testing[ https://mazinahmed.net/blog/breaking-jwt](https://mazinahmed.net/blog/breaking-jwt/)
