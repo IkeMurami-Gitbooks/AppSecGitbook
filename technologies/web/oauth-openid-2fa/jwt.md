@@ -103,6 +103,6 @@ JSON Object Signing and Encryption (JOSE) — проект, в котором п
 
 Библиотека для работы с JWT, JWS, JWK, ... — [jwcrypto](https://jwcrypto.readthedocs.io/en/latest/).\
 Примеры использования можно [найти](https://github.com/latchset/jwcrypto/issues/14) в тестах к этой библиотеки.\
-Мои примеры работы с этой библиотекой (реализовывал атаки на JWT).
+[Мои примеры](https://github.com/IkeMurami/jwt-manipulations) работы с этой библиотекой (реализовывал атаки на JWT).
 
 JWT Security Testing[ https://mazinahmed.net/blog/breaking-jwt](https://mazinahmed.net/blog/breaking-jwt/)
