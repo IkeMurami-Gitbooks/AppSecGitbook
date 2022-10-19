@@ -22,6 +22,24 @@ Basic:
 {% endraw %}{{ os.popen("whoami").read() }}
 ```
 
+### Django
+
+#### Django Templates
+
+Link:[ https://docs.djangoproject.com/en/4.1/topics/templates/](https://docs.djangoproject.com/en/4.1/topics/templates/)
+
+Basic:
+
+```python
+{% raw %}
+{% debug %}
+{% endraw %}
+```
+
+### Jinja2
+
+Link: [https://jinja.palletsprojects.com/en/3.1.x/](https://jinja.palletsprojects.com/en/3.1.x/)
+
 ## Ruby
 
 ### ERB
