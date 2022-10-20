@@ -34,6 +34,7 @@ Basic:
 {% raw %}
 {% debug %}
 {% endraw %}
+{{ setting.SECRET_KEY }}
 ```
 
 ### Jinja2
