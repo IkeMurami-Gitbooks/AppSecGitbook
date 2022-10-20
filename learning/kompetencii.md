@@ -1,5 +1,7 @@
 # Компетенции
 
+Certifications RoadMap: [https://pauljerimy.com/security-certification-roadmap/](https://pauljerimy.com/security-certification-roadmap/)
+
 Link: [http://docs.google.com/spreadsheets/d/15w9mA5HB9uuiquIx8pavdxThwfMrH7HSv2zmagrekec/](http://docs.google.com/spreadsheets/d/15w9mA5HB9uuiquIx8pavdxThwfMrH7HSv2zmagrekec/)
 
 {% file src="../.gitbook/assets/Матрица компетенций.xlsx" %}
