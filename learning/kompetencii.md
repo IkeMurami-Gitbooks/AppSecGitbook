@@ -20,4 +20,4 @@ Information Security Professionals Responsibilities [MindMap](https://rafeeqrehm
 
 {% file src="../.gitbook/assets/roadmap-ru.mm" %}
 
-![](<../.gitbook/assets/изображение (1).png>)
+![](<../.gitbook/assets/изображение (1) (2).png>)
