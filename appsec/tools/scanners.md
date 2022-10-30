@@ -20,4 +20,3 @@ Nuclei (Go): сканим на предмет CVE, уязвимостей. Ко�
 
 &#x20;Grype — сканер образов, файоловой системы и сторонних пакетов на ряде языков [https://github.com/anchore/grype](https://github.com/anchore/grype)
 
-Dastardly — a free, lightweight web application security scanner (DAST?) for your CI/CD pipeline [https://portswigger.net/blog/free-dastardly-from-burp-suite](https://portswigger.net/blog/free-dastardly-from-burp-suite)
