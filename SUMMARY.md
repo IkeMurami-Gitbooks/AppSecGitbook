@@ -269,6 +269,7 @@
   * [JS](appsec/yap/js-1/README.md)
     * [Search links](appsec/yap/js-1/js.md)
     * [RCE on Desktop Clients (ex: win)](appsec/yap/js-1/rce-on-desktop-clients-ex-win.md)
+* [Books & Papers](appsec/books-and-papers.md)
 * [Tools](appsec/tools/README.md)
   * [Crawling](appsec/tools/crawling.md)
   * [CSP bypass](appsec/tools/csp-bypass.md)
