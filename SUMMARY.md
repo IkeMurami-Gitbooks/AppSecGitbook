@@ -11,6 +11,7 @@
   * [Security Check Lists](metodologii/security-check-lists.md)
   * [Security Cheat Sheets](methodologies/security-cheat-sheets.md)
   * [Pentest](metodologii/pentest/README.md)
+    * [Threat Modeling](methodologies/pentest/threat-modeling.md)
     * [MITRE ATT\&CK](metodologii/pentest/mitre-att-and-ck.md)
     * [OSSTMM](metodologii/pentest/osstmm.md)
     * [CVSS](metodologii/pentest/cvss.md)

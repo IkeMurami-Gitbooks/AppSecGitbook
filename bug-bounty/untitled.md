@@ -43,8 +43,6 @@ AntiHack\
 
 [code4rena](https://code4rena.com/) — между bb и пентестами. Открывается программа (смарт-контракты?), в течение какого-то короткого времени (сессия) ресерчеры ищут баги. Программа закрывается, баги ранжируются, объединяются дубликаты. В чем особенность: сумма за дубликаты делится поровну.
 
-HackenProof — Crypto Bug Bounty Platform. [https://t.me/hackenproof](https://t.me/hackenproof). Не знаю на сколько это официально и раскручено, и стоит ли уделять этой платформе время, или она только в начале, или это скам и тп..
-
 ### Self Hosted
 
 List: [https://chaos.projectdiscovery.io/](https://chaos.projectdiscovery.io/)\
