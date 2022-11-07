@@ -89,3 +89,4 @@ Content-Type: application/json
 * Использовать Burp расширение - autorize
 * Если ничего не работает из этого - проявите творческих подход)
 
+IDOR MindMap: [https://xmind.app/m/CSKSWZ/?s=35](https://xmind.app/m/CSKSWZ/?s=35)
