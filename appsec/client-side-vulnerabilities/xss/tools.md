@@ -37,6 +37,8 @@ python xsstrike.py -u "https://example.com/?search=t"
 
 ## XSSHunter
 
+Deprecated: [https://twitter.com/iammandatory/status/1587106717283721217](https://twitter.com/iammandatory/status/1587106717283721217)
+
 Поднимает сервер и закидывает специфичные пэйлоады с OOB техникой.
 
 XSSHunter (JS/Python): \
