@@ -107,3 +107,7 @@ server.Serve(projectpath)  // не понятно, как этим пользо�
 ## Analyze webpack bundle (blackbox)
 
 GradeJS
+
+## TODO: опробовать katana
+
+Инструмент от projectdiscovery (Go) — [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana)
