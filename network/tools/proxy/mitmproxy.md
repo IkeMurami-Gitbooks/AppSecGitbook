@@ -18,3 +18,5 @@ mitmproxy -p 9999 --mode upstream:localhost:8888 --ssl-insecure
 
 Можно писать модули (наз wrapper)\
 Пример: [https://github.com/trololomgwtf/mitmproxy-wrapper/](https://github.com/trololomgwtf/mitmproxy-wrapper/)
+
+mitmproxy сейчас поддерживает множество новшеств, например, wireguard mode. Возможно стоит к нему присмотреться, а не к BurpSuite: [https://mitmproxy.org/posts/releases/mitmproxy9/](https://mitmproxy.org/posts/releases/mitmproxy9/)
