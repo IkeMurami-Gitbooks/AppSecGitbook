@@ -12,7 +12,7 @@ Payloads All The Things: [https://github.com/swisskyrepo/PayloadsAllTheThings/bl
 
 Пример:
 
-![](<../../../.gitbook/assets/изображение (1).png>)
+![](<../../../.gitbook/assets/изображение (1) (1).png>)
 
 ## RCE Gadgets
 
