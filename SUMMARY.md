@@ -266,6 +266,7 @@
 * [Вопросы](appsec/voprosy/README.md)
   * [Как хранить пароли?](appsec/voprosy/kak-khranit-paroli.md)
   * [Сброс пароля через email](appsec/voprosy/sbros-parolya-cherez-email.md)
+  * [Про процессы и контроли](appsec/voprosy/pro-processy-i-kontroli.md)
 * [ЯП](appsec/yap/README.md)
   * [JS](appsec/yap/js-1/README.md)
     * [Search links](appsec/yap/js-1/js.md)
