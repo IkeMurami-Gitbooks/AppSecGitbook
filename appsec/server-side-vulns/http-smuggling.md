@@ -40,6 +40,8 @@ Transfer-Encoding: chunked
 SMUGGLED
 ```
 
+В PortSwigger есть лаба: [https://portswigger.net/web-security/request-smuggling/lab-basic-cl-te](https://portswigger.net/web-security/request-smuggling/lab-basic-cl-te)
+
 ### TE.CL
 
 Пример запроса
@@ -56,6 +58,9 @@ SMUGGLED
 
 
 ```
+
+В PortSwigger есть лаба: [https://portswigger.net/web-security/request-smuggling/lab-basic-te-cl](https://portswigger.net/web-security/request-smuggling/lab-basic-te-cl)\
+Мое решение: [https://gist.github.com/IkeMurami/45abe13216559cfb89d3b1397a53fd02](https://gist.github.com/IkeMurami/45abe13216559cfb89d3b1397a53fd02)
 
 ### Другой пример
 
