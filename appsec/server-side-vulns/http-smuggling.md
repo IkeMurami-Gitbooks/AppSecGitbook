@@ -111,3 +111,5 @@ HTTP Smuggling lab: здесь внутри и на сокетах и в раз�
 
 И норм материал к этому: [https://regilero.github.io/english/security/2019/10/17/security\_apache\_traffic\_server\_http\_smuggling/](https://regilero.github.io/english/security/2019/10/17/security\_apache\_traffic\_server\_http\_smuggling/)
 
+Мое скрипт по решению этих лаб: [https://github.com/IkeMurami/zscanutils/blob/main/scripts/http\_request\_over\_sockets.py](https://github.com/IkeMurami/zscanutils/blob/main/scripts/http\_request\_over\_sockets.py)
+
