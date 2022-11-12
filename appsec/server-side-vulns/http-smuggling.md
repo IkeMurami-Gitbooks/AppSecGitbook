@@ -84,6 +84,8 @@ Transfer-Encoding
 : chunked
 ```
 
+PortSwigger Lab: [https://portswigger.net/web-security/request-smuggling/lab-obfuscating-te-header](https://portswigger.net/web-security/request-smuggling/lab-obfuscating-te-header)
+
 ### 2xCL
 
 Использование двух `Content-Length` — где-то может взяться первый `Content-Length`, а на другом сервере — второй
