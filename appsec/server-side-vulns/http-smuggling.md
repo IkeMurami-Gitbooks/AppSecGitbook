@@ -62,9 +62,31 @@ SMUGGLED
 В PortSwigger есть лаба: [https://portswigger.net/web-security/request-smuggling/lab-basic-te-cl](https://portswigger.net/web-security/request-smuggling/lab-basic-te-cl)\
 Мое решение: [https://gist.github.com/IkeMurami/45abe13216559cfb89d3b1397a53fd02](https://gist.github.com/IkeMurami/45abe13216559cfb89d3b1397a53fd02)
 
-### Другой пример
+### TE.TE
 
-Использование двух Content-Length - где-то может взяться первый content-length, а на другом серваке - второй
+Как указано выше: оба сервера поддерживают заголовок TE, но если он обфусцирован немного, могут на него среагировать по разному. Наша задача: найти такую обфускацию, при которой один сервер обработает заголовок, другой — проигнорирует. Примеры обфускации заголовка:
+
+```
+Transfer-Encoding: xchunked
+
+Transfer-Encoding : chunked
+
+Transfer-Encoding: chunked
+Transfer-Encoding: x
+
+Transfer-Encoding:[tab]chunked
+
+[space]Transfer-Encoding: chunked
+
+X: X[\n]Transfer-Encoding: chunked
+
+Transfer-Encoding
+: chunked
+```
+
+### 2xCL
+
+Использование двух `Content-Length` — где-то может взяться первый `Content-Length`, а на другом сервере — второй
 
 ```
 POST / HTTP/1.1
