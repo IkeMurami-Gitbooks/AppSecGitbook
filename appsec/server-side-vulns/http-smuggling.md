@@ -294,6 +294,8 @@ Python script: [https://github.com/gwen001/pentest-tools/blob/master/smuggler.py
 
 ## Exploiting
 
+Source: [https://portswigger.net/web-security/request-smuggling/exploiting](https://portswigger.net/web-security/request-smuggling/exploiting)
+
 * Bypass security controls
 * Rewriting front-end request
 * Bypass client authentication
@@ -301,6 +303,16 @@ Python script: [https://github.com/gwen001/pentest-tools/blob/master/smuggler.py
   * Open Redirect
   * rXSS
   * WebCache Poisoning
+
+### Example: Bypass security control
+
+CL.TE
+
+![](<../../.gitbook/assets/image (1).png>)
+
+Пусть фронт-сервер пропускает запросы только к /home. Фронт-сервер видит два запроса /home (синий+красный и зеленый) и он перенаправляет их на бэкенд-сервер.
+
+Бэкенд сервер видит два HTTP-запроса — синий (/home) и красный+зеленый (/admin).
 
 ## TODO
 
