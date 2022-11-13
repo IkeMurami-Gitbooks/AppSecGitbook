@@ -4,6 +4,8 @@
 
 CSRF токены не защищают от этого вида атак. Защищает детектирование того, что сайт загружен в скрытом iframe.
 
+Source: [https://portswigger.net/web-security/clickjacking](https://portswigger.net/web-security/clickjacking)
+
 ## Construct basic clickjacking attack
 
 ```markup
@@ -65,3 +67,34 @@ Frame Busting реализуется с помощью проприетарны�
 ```
 
 Значения `allow-forms` и `allow-scripts` разрешают указанные действия в iframe, но навигация верхнего уровня отключена. Это запрещает прерывание кадров, но обеспечивает функциональность на целевом сайте.
+
+## Mitigations
+
+### X-Frame-Options
+
+Запрещено отрисовывать в iframe
+
+```
+X-Frame-Options: deny
+```
+
+Только с того же ориджена
+
+```
+X-Frame-Options: sameorigin
+```
+
+Разрешено с определенного сайта
+
+```
+X-Frame-Options: allow-from https://normal-website.com
+```
+
+### CSP
+
+```
+Content-Security-Policy: frame-ancestors 'self';
+Content-Security-Policy: frame-ancestors normal-website.com;
+```
+
+Подробнее: [https://portswigger.net/web-security/cross-site-scripting/content-security-policy#protecting-against-clickjacking-using-csp](https://portswigger.net/web-security/cross-site-scripting/content-security-policy#protecting-against-clickjacking-using-csp)
