@@ -292,6 +292,16 @@ Smuggler extension for Burp: [https://kalilinuxtutorials.com/http-request-smuggl
 
 Python script: [https://github.com/gwen001/pentest-tools/blob/master/smuggler.py](https://github.com/gwen001/pentest-tools/blob/master/smuggler.py)
 
+## Exploiting
+
+* Bypass security controls
+* Rewriting front-end request
+* Bypass client authentication
+* Lead to client-side bugs:
+  * Open Redirect
+  * rXSS
+  * WebCache Poisoning
+
 ## TODO
 
 Сделать лабу на HTTP Smuggling
