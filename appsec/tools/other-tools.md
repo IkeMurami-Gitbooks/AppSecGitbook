@@ -14,14 +14,6 @@ gitleaks (Go) - проверка гит-репозитория на наличи
 
 wappalyzer - узнаем на каких технологиях собран сайт. Go порт: [https://github.com/rverton/webanalyze](https://github.com/rverton/webanalyze)
 
-arjun (Python) - работает хорошо - поиск параметров для get post запросов [https://github.com/s0md3v/Arjun](https://github.com/s0md3v/Arjun)
-
-ParamMiner — плагин бурпа для поиска заголовков, параметров и тп
-
-x8 (Rust) — поиск параметров [https://github.com/sh1yo/x8](https://github.com/sh1yo/x8)
-
-ParamPamPam (Python) - то ж для перебора параметров
-
 transformations (JS) - подаем на вход payload и как его обрабатывает страница; тулза выдает какие преобразования были произведены (пытается предсказать): [https://github.com/jobertabma/transformations](https://github.com/jobertabma/transformations)
 
 dnsobserver (Go) - считай, свой коллаборатор. Работает следующим образом: помогает настроить DNS сервер, внедрить пэйлоад для резолва dns имени сервера. В случае детекта резолва, отправляет уведомление в slack - [https://github.com/allyomalley/dnsobserver](https://github.com/allyomalley/dnsobserver)
@@ -36,9 +28,16 @@ fprobe (Go) - переписанный httprobe - пробует работат�
 
 reNgine (Python) вроде aquatone и др инструментов для сбора информации [https://github.com/yogeshojha/rengine](https://github.com/yogeshojha/rengine)
 
+## Search hiding params
 
+arjun (Python) - работает хорошо - поиск параметров для get post запросов [https://github.com/s0md3v/Arjun](https://github.com/s0md3v/Arjun)
 
+ParamMiner — плагин бурпа для поиска заголовков, параметров и тп
 
+x8 (Rust) — ([наиболее перспективна из предложенных](https://t.me/webpwn/339)) поиск параметров [https://github.com/sh1yo/x8](https://github.com/sh1yo/x8)
 
+```
+x8 -u "https://example.com/" -w <wordlist>
+```
 
-
+ParamPamPam (Python) - то ж для перебора параметров
