@@ -227,6 +227,7 @@
       * [\[висячая разметка\] Dangling markup injection](appsec/client-side-vulns/xss/attacks/chto-to-s-yakorem-dangling-markup-injection.md)
       * [CSS injection](appsec/client-side-vulns/xss/attacks/css-injection.md)
       * [jQuery XSS](appsec/client-side-vulns/xss/attacks/jquery-xss.md)
+      * [AngularJS Sandbox Escape](appsec/client-side-vulns/xss/attacks/angularjs-sandbox-escape.md)
     * [Tools](appsec/client-side-vulns/xss/tools.md)
     * [Cheat Sheets](appsec/client-side-vulns/xss/cheat-sheets.md)
     * [Papers](appsec/client-side-vulns/xss/papers.md)
