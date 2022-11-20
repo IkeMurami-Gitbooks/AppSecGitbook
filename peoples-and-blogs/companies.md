@@ -4,6 +4,10 @@ Deteact Blog: [https://blog.deteact.com/ru/](https://blog.deteact.com/ru/)
 
 Gitlab Security Blog: [https://about.gitlab.com/blog/categories/security/](https://about.gitlab.com/blog/categories/security/)
 
+Github Security Blog [https://github.blog/category/security/](https://github.blog/category/security/)
+
+Github Security Blog: AppSec — как построить AppSec на базе Github: [https://resources.github.com/appsec/](https://resources.github.com/appsec/)
+
 nccgroup: [https://research.nccgroup.com/](https://research.nccgroup.com/)
 
 Fox-IT (a part of nccgroup): [https://blog.fox-it.com](https://blog.fox-it.com)
