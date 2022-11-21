@@ -1,0 +1,2 @@
+# Writing CodeQL queries
+
