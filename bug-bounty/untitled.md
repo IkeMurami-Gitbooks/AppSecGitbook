@@ -72,9 +72,6 @@ Yandex: [https://yandex.ru/bugbounty/](https://yandex.ru/bugbounty/)
 
 JIVO: [https://www.jivo.ru/bugbounty/](https://www.jivo.ru/bugbounty/)
 
-Github Security Lab (GHSL) Bugbounty: находим уязвимость в open source, пишем codeql правило, которое еще не покрывается текущими правилами — получаем bounty [https://securitylab.github.com/bounties/](https://securitylab.github.com/bounties/)\
-Или, если с помощью существующих кверей нашли уязвимости в open source проектах, то можем их сдать через GHSL и получить баунти от них
-
 ## Другие способы подзаработать
 
 Можно поискать проектную работу на Upwork: [https://www.upwork.com/](https://www.upwork.com/)
