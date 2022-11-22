@@ -16,7 +16,7 @@ docker run --rm -it -v /path/to/host/work:/work:rw k0st/alpine-dvcs-ripper rip-g
 
 ## Screen Web Crawling
 
-#### Aquatone
+### Aquatone
 
 git:  [https://github.com/michenriksen/aquatone](https://github.com/michenriksen/aquatone)
 
@@ -46,6 +46,38 @@ cat hosts.txt | aquatone -ports 80,443,3000,3001 -out ~/aquatone/example.com
 ### gowitness
 
 Библиотека на go для создания скриншотов сайтов [https://github.com/sensepost/gowitness](https://github.com/sensepost/gowitness)
+
+#### Install
+
+```
+docker pull leonjza/gowitness
+```
+
+#### Usage
+
+Create alias:
+
+for win create gowitness.bat:
+
+```batch
+@echo off
+call docker run --rm -v %PWD%:/data leonjza/gowitness gowitness %*
+```
+
+or use full run docker command:
+
+```
+Create alias to command:
+on macos: docker run --rm -v $(pwd):/data leonjza/gowitness gowitness
+on win (powershell): docker run --rm -v ${pwd}:/data leonjza/gowitness gowitness
+```
+
+run
+
+```
+gowitness single https://example.com
+gowitness file -f /data/urls.list
+```
 
 ## URL crawling from WebApp
 
