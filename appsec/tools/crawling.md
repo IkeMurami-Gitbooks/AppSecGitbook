@@ -79,6 +79,12 @@ gowitness single https://example.com
 gowitness file -f /data/urls.list
 ```
 
+Запустить report server (http://127.0.0.1:7171) по результату (сюда же можно будет докидывать URL ы новые). Не разобрался пока что, как запустить это в batch файле на винде
+
+```
+docker run --rm -v ${pwd}:/data -p7171:7171 leonjza/gowitness gowitness report serve --address :7171
+```
+
 ## URL crawling from WebApp
 
 ### gau
