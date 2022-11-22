@@ -85,6 +85,93 @@ gowitness file -f /data/urls.list
 docker run --rm -v ${pwd}:/data -p7171:7171 leonjza/gowitness gowitness report serve --address :7171
 ```
 
+#### Watching report
+
+Один минус инструмента: если у вас тысячи хостов, результат смотреть через веб нереально. Но есть возможность через небольшую магию python сгруппировать хосты по параметру `perception_hash` из локальной базы `gowitness.sqlite3` из таблицы `urls`. Накидал скрипт для этого (близость хешей не вычислял):
+
+```python
+import sqlite3
+from pathlib import Path
+
+
+class Database:
+    def __init__(self, path):
+        self.path = path
+
+    def get(self, query):
+        cursor = self.db.cursor()
+        cursor.execute(query)
+        result = cursor.fetchall()
+        return result
+
+    def connect(self):
+        self.db = sqlite3.connect(self.path)
+        return self
+
+    def close(self):
+        self.db.close()
+
+# Путь до gowitness.sqlite3 базы
+GOWITNESS_SQLITE3_PATH ="D:\MyProjects\BugBounty\scope\gowitness\gowitness.sqlite3"
+# Путь до директории, куда сохраняем результат
+GOWITNESS_ANALYTIC_OUT_DIR = "D:\MyProjects\BugBounty\scope\gowitness\\analytics"
+db = Database(GOWITNESS_SQLITE3_PATH).connect()
+
+phash_records = db.get('SELECT DISTINCT perception_hash FROM urls')
+
+for phash_record in phash_records:
+    print(phash_record[0])  # 'p:8b49bbe00bcb8f68', calculate from screenshot image
+    url_records = db.get(f'SELECT id, final_url, response_code, response_reason FROM urls WHERE perception_hash = "{phash_record[0]}"')
+    
+    out_file_records = list()
+    headers = []
+    for url_record in url_records:
+        id, final_url, response_code, response_reason = url_record
+        out_file_records.append(', '.join([str(id), final_url, str(response_code), response_reason]))
+
+        # Extract headers for that requests
+        header_records = db.get(f'SELECT key, value FROM headers WHERE url_id = {id}')
+        headers = [f'{header_record[0]}: {header_record[1]}' for header_record in header_records ]
+        headers = list(set(headers))  # save unique
+        headers.sort()
+
+        # Extract dns names from certificates
+        tls_records = db.get('SELECT name ' +  
+                             'FROM tls_certificate_dns_names ' + 
+                             'WHERE tls_certificate_id IN (' + 
+                                'SELECT id AS certificate_id ' + 
+                                'FROM tls_certificates ' + 
+                                'WHERE tls_id IN (' + 
+                                    'SELECT id AS tls_id ' + 
+                                    'FROM tls ' + 
+                                   f'WHERE url_id = {id}' + 
+                                ')' + 
+                            ')')
+        
+        dns_names = [tls_record[0] for tls_record in tls_records]
+        dns_names = list(set(dns_names))  # save unique
+        dns_names.sort()
+
+
+    # Save urls with same perception_hash
+    phash_value = phash_record[0].split(':')[1]
+    Path(GOWITNESS_ANALYTIC_OUT_DIR, phash_value).mkdir()
+    with Path(GOWITNESS_ANALYTIC_OUT_DIR, phash_value, 'urls.list').open(mode='w') as out_stream:
+        out_stream.write('\n'.join(out_file_records))
+
+    # Save headers
+    with Path(GOWITNESS_ANALYTIC_OUT_DIR, phash_value, 'headers.list').open(mode='w') as out_stream:
+        headers.sort()
+        out_stream.write('\n'.join(headers))
+
+    # Save dns_names
+    with Path(GOWITNESS_ANALYTIC_OUT_DIR, phash_value, 'dnsnames.list').open(mode='w') as out_stream:
+        dns_names.sort()
+        out_stream.write('\n'.join(dns_names))
+
+db.close()
+```
+
 ## URL crawling from WebApp
 
 ### gau
