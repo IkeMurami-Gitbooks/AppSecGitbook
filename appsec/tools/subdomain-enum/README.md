@@ -4,27 +4,19 @@ description: Поиск поддоменов
 
 # Subdomain Enum
 
-## Tools&#x20;
+## &#x20;Прям машины над источниками
 
-### Прям машины над источниками
+### OWASP Amass
 
-#### OWASP Amass
 
-git: [https://github.com/OWASP/Amass/tree/master/amass/sources](https://github.com/OWASP/Amass/tree/master/amass/sources)
-
-Особенности:
-
-* Написан на Go
-* subdomain enum and network mapping - это автоматизация над кучей инструментов и баз других
-* Есть поддержка плагинов (Lua)
-
-tutorial: [https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/](https://www.dionach.com/blog/how-to-use-owasp-amass-an-extensive-tutorial/)
 
 ```
 Домен по ip
-amass intel -active -addr 93.28.17.161,93.28.21.181,93.28.16.93
+
 
 ```
+
+
 
 Пример Go скрипта: ip по доменам
 
@@ -69,7 +61,7 @@ func AmassTest() {
 }
 ```
 
-#### Monitorizer
+### Monitorizer
 
 git: [https://github.com/BitTheByte/Monitorizer/](https://github.com/BitTheByte/Monitorizer/)
 
@@ -81,7 +73,7 @@ git: [https://github.com/BitTheByte/Monitorizer/](https://github.com/BitTheByte/
 * Написан на python
 * Для своей работы требует веб-сервер с linux (например, на Amazon EC2)
 
-#### Findomain
+### Findomain
 
 git: [https://github.com/Edu4rdSHL/findomain](https://github.com/Edu4rdSHL/findomain)
 
@@ -97,11 +89,11 @@ git: [https://github.com/Edu4rdSHL/findomain](https://github.com/Edu4rdSHL/findo
 * Поддержа elasticsearch, shodan и тп
 * Поддерживает интеграцию с Rapid7 Project Sonar (это сканер сети (типо nessus?))
 
-#### dnsdumbster
+### dnsdumbster
 
 Это сайт, вбиваешь домен, он находит куча всего и как бонусом строит карту зависимостей серверов (кто на кого ссылается и тому подобное). Очень круто и есть то, что не находят RiskIQ, shodan.
 
-### Тулзы, покрывающие маленькое число ресурсов
+## Тулзы, покрывающие маленькое число ресурсов
 
 subfinder (Go) - [https://github.com/projectdiscovery/subfinder](https://github.com/projectdiscovery/subfinder)
 
@@ -115,7 +107,7 @@ waybackurls (Go) src: VirusTotal, Archive.org (Wayback Machine), CommonCrawl - [
 AssetFinder (Go)  - еще один инструмент. Тоже OSINT. В TODO стоит интеграция с другими ресурсами интересными (например, RiskIQ). В общем, надо анализировтаь и сравнивать источники с другими инструментами.   [https://github.com/tomnomnom/assetfinder](https://github.com/tomnomnom/assetfinder)\
 Пример использования: `assetfinder -subs-only my.domain.com | httprobe`
 
-### Брут по спискам
+## Брут по спискам
 
 subEnum (python) - [https://github.com/itsKindred/subEnum](https://github.com/itsKindred/subEnum)
 
@@ -123,7 +115,7 @@ KnockPy (support VirusTotal) [https://github.com/guelfoweb/knock](https://github
 
 shuffleDNS (Go)- обертка над massdns. Вроде как очень быстрый брут [https://github.com/projectdiscovery/shuffledns](https://github.com/projectdiscovery/shuffledns)
 
-#### massdns
+### massdns
 
 massdns - очень быстрое сканирование поддоменов\
 &#x20;бывают ошибки на поддоменах 4+ уровня. если надо прям точно, поставь меньше конкурентных запросов и таймаут + число попыток увеличить на ошибки\
@@ -141,13 +133,13 @@ massdns - очень быстрое сканирование поддомено�
 Поделюсь своими флагами, может быть интересно будет\
 \--verify-ip -r resolvers7 -i 2000 -c 50 -o Sin
 
-### Источники
+## Источники
 
 crt.sh/?q=\<query> - поиск по сертам зарегистрированные домены
 
 SecurityTrails.com - охеренный сайт для поиска поддоменов и IP
 
-### Мутаторы
+## Мутаторы
 
 altdns
 

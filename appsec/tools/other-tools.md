@@ -22,11 +22,19 @@ dnsobserver (Go) - считай, свой коллаборатор. Работа
 
 Rogue-MySQL-Server (Python/PHP). git: [https://github.com/allyshka/Rogue-MySql-Server](https://github.com/allyshka/Rogue-MySql-Server)
 
-httprobe - тоже на Go [https://github.com/tomnomnom/httprobe](https://github.com/tomnomnom/httprobe)
-
-fprobe (Go) - переписанный httprobe - пробует работать с доменом как с http-сервером. Используется для перечисления скопа. Git : [https://github.com/theblackturtle/fprobe](https://github.com/theblackturtle/fprobe)
-
 reNgine (Python) вроде aquatone и др инструментов для сбора информации [https://github.com/yogeshojha/rengine](https://github.com/yogeshojha/rengine)
+
+## Search web apps
+
+httprobe (Go) — поиск http сервисов [https://github.com/tomnomnom/httprobe](https://github.com/tomnomnom/httprobe)
+
+fprobe (Go) — (переписанный httprobe) пробует работать с доменом как с http-сервером. Используется для перечисления скопа. Git : [https://github.com/theblackturtle/fprobe](https://github.com/theblackturtle/fprobe)
+
+httpx (Go) — еще один подобный инструмент. git: [https://github.com/projectdiscovery/httpx](https://github.com/projectdiscovery/httpx)
+
+Usage:
+
+<pre><code><strong>cat hosts.txt | docker run -i projectdiscovery/httpx</strong></code></pre>
 
 ## Search hiding params
 
