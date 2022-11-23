@@ -24,6 +24,61 @@ ffuf -w wordlists/SecLists/Discovery/Web-Content/raft-medium-directories-lowerca
 ffuf -w .../tools/pentest/wordlists/dirsearch/db/dicc.txt -o ffuf_result.json -r -D -u https://example.com/FUZZ -e js,php,asp,aspx,jsp > out.txt
 ```
 
+Разбор результатов
+
+```python
+# Ищем директории
+# ffuf -w domain.web.list:TARGET -w D:\\MyProjects\\BugBounty\\tools\\dirsearch\\db\\dicc.txt:DIRECTORY -o ffuf_result.json -r -D -u https://TARGET/DIRECTORY -e php,asp,aspx,jsp
+from pathlib import Path
+import json
+
+
+def introspect(obj):
+    for key in obj:
+        print(f'{key}: {type(obj[key])}')
+
+
+with Path('D:\\MyProjects\\BugBounty\\scope\\ffuf_result.json').open(mode='r') as inp_stream:
+    data = inp_stream.read()
+    ffuf_json_result = json.loads(data)
+    print(f'commandline: {ffuf_json_result["commandline"]}')
+    print(f'time: {ffuf_json_result["time"]}')
+    
+    # introspect(ffuf_json_result)
+
+    result = dict()
+
+    for ffuf_record in ffuf_json_result['results']:
+
+        TARGET = ffuf_record['input']['TARGET']
+        DIRECTORY = ffuf_record['input']['DIRECTORY']
+        status      = ffuf_record['status']
+        length      = ffuf_record['length']
+        words       = ffuf_record['words']
+        lines       = ffuf_record['lines']
+        duration    = ffuf_record['duration']
+
+        status = str(status)
+        length = str(length)
+        words = str(words)
+        lines = str(lines)
+        duration = str(duration)
+
+        if TARGET not in result:
+            result[TARGET] = list()
+
+        result[TARGET].append(', '.join([DIRECTORY, status, length, words, lines, duration]))
+        # introspect(ffuf_record)
+    
+    directory = Path('D:\\MyProjects\\BugBounty\\scope\\ffuf_subdirs')
+    directory.mkdir()
+    
+    for TARGET in result:
+        with Path(directory, TARGET).open(mode='w') as out_stream:
+            out_stream.write('\n'.join(result[TARGET]))
+        break
+```
+
 ## Virtual Hosts
 
 &#x20;см в соотв разделе
