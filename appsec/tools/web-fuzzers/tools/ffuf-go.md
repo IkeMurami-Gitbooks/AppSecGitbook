@@ -71,12 +71,12 @@ with Path('D:\\MyProjects\\BugBounty\\scope\\ffuf_result.json').open(mode='r') a
         # introspect(ffuf_record)
     
     directory = Path('D:\\MyProjects\\BugBounty\\scope\\ffuf_subdirs')
-    directory.mkdir()
+    directory.mkdir(exist_ok=True)
     
     for TARGET in result:
         with Path(directory, TARGET).open(mode='w') as out_stream:
             out_stream.write('\n'.join(result[TARGET]))
-        break
+        
 ```
 
 ## Virtual Hosts

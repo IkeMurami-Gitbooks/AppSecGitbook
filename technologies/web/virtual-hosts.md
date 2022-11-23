@@ -14,6 +14,8 @@ ffuf -w ip.txt:IP -w domains.txt:VIRTUAL -o ffuf_result.json -r  -u https://IP/ 
 
 ```python
 # Ищем виртуальные хосты
+# ffuf -w web.ip.list:IP -w domain.ffuf.list:VIRTUAL -o ffuf_result.json -r -u https://IP/ -H Host: VIRTUAL
+
 from pathlib import Path
 import json
 
@@ -31,10 +33,7 @@ with Path('D:\\MyProjects\\BugBounty\\scope\\ffuf_result.json').open(mode='r') a
     
     # introspect(ffuf_json_result)
 
-    result = {
-        '192.168.0.1': [],
-        '192.168.0.2': []
-    }
+    result = dict()
 
     for ffuf_record in ffuf_json_result['results']:
         # print(ffuf_record)
@@ -53,10 +52,15 @@ with Path('D:\\MyProjects\\BugBounty\\scope\\ffuf_result.json').open(mode='r') a
         lines = str(lines)
         duration = str(duration)
 
+        if IP not in result:
+            result[IP] = list()
+
         result[IP].append(', '.join([VIRTUAL, status, length, words, lines, duration]))
         # introspect(ffuf_record)
     
     directory = Path('D:\\MyProjects\\BugBounty\\scope\\ffuf_virtual')
+    directory.mkdir(exist_ok=True)
+    
     for IP in result:
         with Path(directory, IP).open(mode='w') as out_stream:
             out_stream.write('\n'.join(result[IP]))
