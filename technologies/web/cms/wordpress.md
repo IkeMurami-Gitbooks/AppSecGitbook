@@ -11,6 +11,13 @@ Web Interface для всего этого: [https://github.com/cyc10n3/WPScan\_
 
 `-o output_file.txt -f [cli | json | ..]`
 
+## Install
+
+Поднимаем на DO дроплет из маркетплейса. Настраиваем домен и файерволл. Заходим по SSH и следуем инструкциям.&#x20;
+
+На нашем домене будет наш сайт\
+На domain/wp-admin — админка
+
 ## User enum
 
 ```
