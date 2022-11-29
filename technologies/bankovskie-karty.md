@@ -19,3 +19,9 @@
 * Корзина — информация о платеже и его статус
 * Клиринг — процесс списания средств со счета для двустадийного платежа (для одностадийного не применимо)
 *
+
+{% file src="../.gitbook/assets/20_лет_проблем_приема_платежей.pdf" %}
+
+## Доклады
+
+* OFFZONE 2018: [https://www.youtube.com/watch?v=nEqQbDsdPzw](https://www.youtube.com/watch?v=nEqQbDsdPzw)
