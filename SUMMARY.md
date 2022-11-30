@@ -224,6 +224,7 @@
       * [Local File Read via HTML injection in PDF](appsec/client-side-vulns/xss/attacks/local-file-read-via-pdf.md)
       * [RCE in DOMPDF](appsec/client-side-vulns/xss/attacks/rce-in-dompdf.md)
       * [\[висячая разметка\] Dangling markup injection](appsec/client-side-vulns/xss/attacks/chto-to-s-yakorem-dangling-markup-injection.md)
+      * [String.prototype.replace](appsec/client-side-vulns/xss/attacks/string.prototype.replace.md)
       * [CSS injection](appsec/client-side-vulns/xss/attacks/css-injection.md)
       * [jQuery XSS](appsec/client-side-vulns/xss/attacks/jquery-xss.md)
       * [AngularJS Sandbox Escape](appsec/client-side-vulns/xss/attacks/angularjs-sandbox-escape.md)
