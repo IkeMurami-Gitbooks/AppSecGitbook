@@ -393,7 +393,7 @@
     * [F5 BIG-IP](technologies/web/servers/f5-big-ip.md)
 * [Покупка SIM-карт и номеров](technologies/pokupka-sim-kart.md)
 * [ATM](technologies/atm.md)
-* [Банковские карты и платежи (cards & payments & processing)](technologies/precessing-and-payments.md)
+* [Банковские карты и платежи (cards & payments & processing)](technologies/bankovskie-karty.md)
 * [Системы управления версиями (Git и проч)](technologies/sistemy-upravleniya-vversiyami-git-i-proch.md)
 * [ELK — Elasticsearch, Logstash, Kibana](technologies/elk-elasticsearch-logstash-kibana/README.md)
   * [About](technologies/elk-elasticsearch-logstash-kibana/about.md)
