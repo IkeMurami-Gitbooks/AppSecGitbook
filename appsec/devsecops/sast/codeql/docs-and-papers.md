@@ -8,11 +8,7 @@ CodeQL Project: [https://codeql.github.com/](https://codeql.github.com/)
 
 CodeQL Queries: [https://github.com/github/codeql](https://github.com/github/codeql)
 
-## Examples
-
-Standard CodeQL Libraries: [https://codeql.github.com/codeql-standard-libraries/](https://codeql.github.com/codeql-standard-libraries/)
-
-Здесь куча запросов для всех языков — CodeQL query help — [https://codeql.github.com/codeql-query-help/](https://codeql.github.com/codeql-query-help/)
+QL Tutorials: [https://codeql.github.com/docs/writing-codeql-queries/ql-tutorials/](https://codeql.github.com/docs/writing-codeql-queries/ql-tutorials/)
 
 ## Papers
 
