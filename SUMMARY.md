@@ -259,7 +259,7 @@
       * [Docs & Papers](appsec/devsecops/sast/codeql/docs-and-papers.md)
       * [Get Started](appsec/devsecops/sast/codeql/get-started.md)
       * [Usage](appsec/devsecops/sast/codeql/usage.md)
-      * [Writing CodeQL queries](appsec/devsecops/sast/codeql/writing-codeql-queries/README.md)
+      * [Writing CodeQL queries](appsec/devsecops/sast/codeql/writing-codeql-queries.md)
         * [About](appsec/devsecops/sast/codeql/writing-codeql-queries/about.md)
         * [CodeQL Packs](appsec/devsecops/sast/codeql/writing-codeql-queries/codeql-packs.md)
         * [CodeQL Queries](appsec/devsecops/sast/codeql/writing-codeql-queries/codeql-queries.md)
