@@ -191,11 +191,6 @@ Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execut
 </html>
 ```
 
-Mitigations:
-
-* Если для аутентификации используются куки, проверить origin запроса и на его основании ответить — 101 или 403
-* Если OAuth, с первым сообщением передать OAuth токен по WS для проверки аутентификации.
-
 ## CSRF Testing MindMap
 
 ![CSRF Testing MindMap](../../.gitbook/assets/image.png)
