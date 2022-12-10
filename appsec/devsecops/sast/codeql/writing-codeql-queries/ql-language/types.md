@@ -6,6 +6,8 @@ Primitive types — boolean, float, int, string, date
 
 ## Classes
 
+### Concrete class
+
 Определение своих классов:
 
 ```
@@ -37,3 +39,49 @@ class OneTwoThree extends int {
 ```
 1.(OneTwoThree).getAString()
 ```
+
+### Abstract class
+
+```
+abstract class SqlExpr extends Expr {
+  ...
+}
+```
+
+### Override predicates
+
+```
+class OneTwo extends OneTwoThree {
+  OneTwo() {
+    this = 1 or this = 2
+  }
+
+  override string getAString() {
+    result = "One or two: " + this.toString()
+  }
+}
+```
+
+### Multiple inheritance
+
+```
+class Two extends OneTwo, TwoThree {}
+```
+
+### Non-extending subtypes
+
+Мы можем вызвать метод другого класса через **super**.
+
+```
+class Foo extends int {
+  Foo() { this in [1 .. 10] }
+
+  string fooMethod() { result = "foo" }
+}
+
+class Bar instanceof Foo {
+  string toString() { result = super.fooMethod() }
+}
+```
+
+Переопределить предикат такого типа нельзя (я про Foo).
