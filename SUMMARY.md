@@ -264,6 +264,7 @@
         * [CodeQL Packs](appsec/devsecops/sast/codeql/writing-codeql-queries/codeql-packs.md)
         * [CodeQL Queries](appsec/devsecops/sast/codeql/writing-codeql-queries/codeql-queries.md)
         * [Basic Library](appsec/devsecops/sast/codeql/writing-codeql-queries/basic-library.md)
+        * [Basic types](appsec/devsecops/sast/codeql/writing-codeql-queries/basic-types.md)
         * [Creating alert queries](appsec/devsecops/sast/codeql/writing-codeql-queries/creating-alert-queries.md)
         * [Creating path queries](appsec/devsecops/sast/codeql/writing-codeql-queries/creating-path-queries.md)
       * [TODO](appsec/devsecops/sast/codeql/todo.md)
