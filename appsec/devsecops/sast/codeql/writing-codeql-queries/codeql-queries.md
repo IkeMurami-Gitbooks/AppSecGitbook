@@ -82,34 +82,6 @@ select t
 
 exists — пример [explicit quantified formula](https://codeql.github.com/docs/ql-language-reference/formulas/#exists).
 
-## Predicates
-
-A [QL predicate](https://codeql.github.com/docs/ql-language-reference/predicates/#predicates) is a mini-query that expresses a relation between various pieces of data and describes some of their properties.
-
-Ex:
-
-```
-predicate isCountry(string country) {
-  country = "Germany"
-  or
-  country = "Belgium"
-  or
-  country = "France"
-}
-
-predicate hasCapital(string country, string capital) {
-  country = "Belgium" and capital = "Brussels"
-  or
-  country = "Germany" and capital = "Berlin"
-  or
-  country = "France" and capital = "Paris"
-}
-
-from Location loc
-where isCountry(loc.name)
-select loc.name
-```
-
 ## Function
 
 ```
