@@ -8,7 +8,8 @@ OSA — Open Source Analysis
 
 ## Инструменты и решения
 
-Google Open Source Scanner (кидаем API ключ и далее сканим по их базе уязвимостей) https://osv.dev&#x20;
+Google Open Source Scanner (кидаем API ключ и далее сканим по их базе уязвимостей) [https://osv.dev](https://osv.dev) \
+Так же, есть OSV Scanner, который по базе OSV ищет известные уязвимости в зависимостях: [https://github.com/google/osv-scanner](https://github.com/google/osv-scanner)
 
 Закидываем в Github/Gitlab, ждем пока их бот-сканер отстучит))
 
