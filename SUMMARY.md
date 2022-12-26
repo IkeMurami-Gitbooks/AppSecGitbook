@@ -314,6 +314,7 @@
     * [Brute subdomains](appsec/tools/subdomain-enum/brute-subdomains.md)
     * [Sources](appsec/tools/subdomain-enum/sources.md)
     * [Mutators](appsec/tools/subdomain-enum/mutators.md)
+    * [Techniques](appsec/tools/subdomain-enum/techniques.md)
   * [Other tools](appsec/tools/other-tools.md)
   * [Scanners](appsec/tools/scanners.md)
   * [Fingerprinting](appsec/tools/fingerprinting.md)
