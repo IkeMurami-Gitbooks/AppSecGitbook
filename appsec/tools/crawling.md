@@ -236,3 +236,5 @@ GradeJS
 ## TODO: опробовать katana
 
 Инструмент от projectdiscovery (Go) — [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana)
+
+Katana — Framework for web crawling and spidering
