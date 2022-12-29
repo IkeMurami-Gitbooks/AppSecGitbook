@@ -1,5 +1,7 @@
 # Платформы
 
+## International Platforms
+
 Bugcrowd\
 [https://www.bugcrowd.com/](https://www.bugcrowd.com/)
 
@@ -51,6 +53,10 @@ List: [https://chaos.projectdiscovery.io/](https://chaos.projectdiscovery.io/)\
 Public BB (это тот же список, но github?): [https://github.com/projectdiscovery/public-bugbounty-programs](https://github.com/projectdiscovery/public-bugbounty-programs)
 
 На [disclose.io](https://disclose.io) можно поискать self hosted компании.
+
+## Как искать платформы и bug bounty программы
+
+Google: `"Bug Bounty" site:ru`.
 
 ## Ru
 
