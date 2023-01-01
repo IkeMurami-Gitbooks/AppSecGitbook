@@ -355,6 +355,7 @@
   * [WAF](technologies/web/waf.md)
   * [GraphQL](technologies/web/graphql.md)
   * [Virtual Hosts](technologies/web/virtual-hosts.md)
+  * [No password authentication](technologies/web/no-password-authentication.md)
   * [OAUTH/OpenID/2FA](technologies/web/oauth-openid-2fa/README.md)
     * [Общие рекомендации для авторизации](technologies/web/oauth-openid-2fa/obshie-rekomendacii-dlya-avtorizacii.md)
     * [2FA](technologies/web/oauth-openid-2fa/2fa.md)
