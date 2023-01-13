@@ -68,8 +68,8 @@ Google: `"Bug Bounty" site:ru`.
 
 ## Казахстан
 
-Tumar One: [https://tumar.one](https://tumar.one)\
-BugBounty KZ (по сути это то же, что и Tumar One): [https://bugbounty.kz/ru](https://bugbounty.kz/ru)
+Tumar One — CRM платформа, через которую авторизуешься на `bugbounty.LTD` и далее багбаунтишь через единую платформу (ближняя Азия): [https://tumar.one](https://tumar.one)\
+BugBounty KZ – платформа в кз: [https://bugbounty.kz/ru](https://bugbounty.kz/ru)
 
 ### Self Hosted
 
