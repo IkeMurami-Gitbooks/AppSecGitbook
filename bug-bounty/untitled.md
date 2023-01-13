@@ -66,6 +66,10 @@ Google: `"Bug Bounty" site:ru`.
 
 [https://app.bugbounty.bi.zone/companies](https://app.bugbounty.bi.zone/companies) — платформа от BI.ZONE. Пока здесь стартуют приватки. Вроде как Авито хотел сюда залететь, ну и ожидаемо СберТех (но это не точно).
 
+## Казахстан
+
+Tumar One: [https://tumar.one](https://tumar.one)
+
 ### Self Hosted
 
 WildBerries: [https://www.wildberries.ru/services/bug-bounty](https://www.wildberries.ru/services/bug-bounty)

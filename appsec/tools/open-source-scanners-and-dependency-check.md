@@ -23,7 +23,7 @@ Snyk
 
 WhiteSource
 
-[BlackDuck](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis.html) — SCA tool — в том числе умеет вытаскивать зависимости из бинарей. Платное.
+BlackDuck — SCA tool
 
 Python dependency checker: [https://pypi.org/project/pip-audit/](https://pypi.org/project/pip-audit/)
 
