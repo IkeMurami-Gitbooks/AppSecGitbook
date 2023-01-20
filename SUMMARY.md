@@ -254,6 +254,7 @@
     * [About](appsec/devsecops/sast/about.md)
     * [SAST List](appsec/devsecops/sast/sast.md)
     * [Python: Bandit](appsec/devsecops/sast/python-bandit.md)
+    * [Semgrep](appsec/devsecops/sast/semgrep.md)
     * [CodeQL](appsec/devsecops/sast/codeql/README.md)
       * [Intro](appsec/devsecops/sast/codeql/intro.md)
       * [Docs & Papers](appsec/devsecops/sast/codeql/docs-and-papers.md)
