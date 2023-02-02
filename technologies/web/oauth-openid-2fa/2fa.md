@@ -22,7 +22,7 @@
 
 ![](<../../../.gitbook/assets/2020-05-22 00.57.23.jpg>)
 
-Другой mindmap: [https://www.xmind.net/m/8Hkymg/#](https://www.xmind.net/m/8Hkymg/#)
+Другой mindmap: [https://www.xmind.net/m/8Hkymg/#](https://www.xmind.net/m/8Hkymg/)
 
 ## Типы токенов (одна из классификаций) при 2FA
 
@@ -36,3 +36,10 @@
 
 ![](<../../../.gitbook/assets/photo\_2020-10-24 15.45.47.jpeg>)
 
+## Secure Way
+
+Password + TOTP
+
+FIDO2
+
+?WebAuthn
