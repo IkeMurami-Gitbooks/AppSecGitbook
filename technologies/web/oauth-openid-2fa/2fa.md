@@ -40,6 +40,6 @@
 
 Password + TOTP
 
-FIDO2
+FIDO2 (физ токены)
 
 ?WebAuthn
