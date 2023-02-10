@@ -7,3 +7,11 @@ DRM — есть hardware и software уровней. Соответственн
 Software DRM — приватный ключ содержится в хорошо обфусцированном бинаре.
 
 Hardware DRM — приватный ключ в защищенной области на чипе устройства.
+
+Популярные DRM системы:
+
+* Microsoft [Playready](https://www.microsoft.com/playready/)
+* Google [Widevine](https://www.widevine.com/)
+* Apple [FairPlay](https://developer.apple.com/streaming/fps/)
+
+Еще тут важная аббревиатура — CDM — Content Decryption Module. Это модуль, отвечающий за расшифрование контента перед показом пользователю.
