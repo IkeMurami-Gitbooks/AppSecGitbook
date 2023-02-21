@@ -76,6 +76,31 @@ Basic:
 ${"freemarker.template.utility.Execute"?new()("id")}
 ```
 
+В коде: [https://habr.com/ru/post/420549/](https://habr.com/ru/post/420549/)
+
+Создаем модель данных:
+
+```java
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+...
+// Конфигурация
+Configuration cfg = new Configuration(Configuration.VERSION_2_3_27);
+// модель данных
+Map<String, Object> root = new HashMap<>();
+root.put("name", "Freemarker");
+// шаблон
+Template temp = cfg.getTemplate("test.ftl");
+// обработка шаблона и модели данных
+Writer out = new OutputStreamWriter(System.out);
+// вывод в консоль
+temp.process(root, out);
+```
+
+Spring поддерживает работу с этим шаблонизатором.
+
+Через класс `freemarker.template.TemplateMethodModelEx` можно расширять команды в шаблонизаторе.
+
 ## JavaScript
 
 ### Handlebars
