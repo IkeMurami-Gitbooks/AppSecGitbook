@@ -14,7 +14,7 @@ X-Forwarded-Host: example4.com
 X-Host: example5.com
 X-Forwarded-Server: example6.com
 X-HTTP-Host-Override: example7.com
-Forwarded: host=example8.com
+Forwarded: host=example8.com, for=example9.com
 X-Forwarded-Proto: http
 X-Forwarded-Scheme: http
 X-HTTP-Method-Override: POST
