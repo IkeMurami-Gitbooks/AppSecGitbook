@@ -137,3 +137,12 @@ RCE (from [payload all the thing](https://github.com/swisskyrepo/PayloadsAllTheT
   {{/with}}
 {{/with}}
 ```
+
+## PHP
+
+### Twig
+
+Таск с CTFZone:&#x20;
+
+* [https://blog.blackfan.ru/2020/03/volgactf-2020-qualifier-writeup.html](https://blog.blackfan.ru/2020/03/volgactf-2020-qualifier-writeup.html)
+* [https://github.com/TeamGreyFang/CTF-Writeups/blob/master/VolgaCTF2020/Web-Newsletter/README.md](https://github.com/TeamGreyFang/CTF-Writeups/blob/master/VolgaCTF2020/Web-Newsletter/README.md)
