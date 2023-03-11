@@ -332,6 +332,7 @@
     * [Dark SEO](technologies/web/analitika-and-marketing/dark-seo.md)
     * [Просто список](technologies/web/analitika-and-marketing/prosto-spisok.md)
   * [RSS-каналы](technologies/web/rss-kanaly/README.md)
+    * [Клиенты](technologies/web/rss-kanaly/klienty.md)
     * [Atom](technologies/web/rss-kanaly/atom.md)
   * [CMIS](technologies/web/cmis/README.md)
     * [About](technologies/web/cmis/about.md)
