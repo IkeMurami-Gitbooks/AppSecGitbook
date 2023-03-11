@@ -1,4 +1,4 @@
-# Auditing and Compliance
+# Audit and Compliance
 
 We should also understand topics of compliance audits and security benchmarks. This includes CIS, PCI DSS, DISA STIG and so on.
 
@@ -31,3 +31,7 @@ Here’s a quick way to get up to speed:
 **MSCT**
 
 * Microsoft Security Compliance Toolkit ([link](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-compliance-toolkit-10))
+
+## Useful platforms
+
+[SafeBase](https://safebase.io/) – предлагает комплаенс – предлагает набор соглашений, который вы можете себе перенять, тем самым описав процессы с точки зрения безопасности мы можем убедить кастомера, что у нас все ОК.
