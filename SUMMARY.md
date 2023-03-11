@@ -296,6 +296,7 @@
   * [JS](appsec/yap/js-1/README.md)
     * [Search links](appsec/yap/js-1/js.md)
     * [RCE on Desktop Clients (ex: win)](appsec/yap/js-1/rce-on-desktop-clients-ex-win.md)
+    * [Обход валидаторов](appsec/yap/js-1/obkhod-validatorov.md)
 * [Books & Papers](appsec/books-and-papers.md)
 * [Tools](appsec/tools/README.md)
   * [Crawling](appsec/tools/crawling.md)
