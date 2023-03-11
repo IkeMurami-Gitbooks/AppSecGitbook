@@ -292,6 +292,8 @@ Smuggler extension for Burp: [https://kalilinuxtutorials.com/http-request-smuggl
 
 Python script: [https://github.com/gwen001/pentest-tools/blob/master/smuggler.py](https://github.com/gwen001/pentest-tools/blob/master/smuggler.py)
 
+WebSocket Smuggle: [https://github.com/0ang3el/websocket-smuggle/blob/master/README.md](https://github.com/0ang3el/websocket-smuggle/blob/master/README.md)
+
 ## Exploiting
 
 Source: [https://portswigger.net/web-security/request-smuggling/exploiting](https://portswigger.net/web-security/request-smuggling/exploiting)
