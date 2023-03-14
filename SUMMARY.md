@@ -406,7 +406,6 @@
   * [Logstash](technologies/elk-elasticsearch-logstash-kibana/logstash.md)
   * [Kibana](technologies/elk-elasticsearch-logstash-kibana/kibana.md)
 * [1C](technologies/1c.md)
-* [Bluetooth](technologies/bluetooth.md)
 * [CI/CD](technologies/ci-cd-1/README.md)
   * [Jenkins](technologies/ci-cd-1/jenkins.md)
   * [huskyCI](technologies/ci-cd-1/huskyci.md)
@@ -417,19 +416,6 @@
   * [Gitlab](technologies/git/gitlab.md)
 * [Honeypots](technologies/honeypots.md)
 * [Kubernetes](technologies/kubernetes.md)
-* [NFC](technologies/nfc.md)
-* [WiFi](technologies/untitled/README.md)
-  * [Атаки](technologies/untitled/ataki.md)
-  * [Tools](technologies/untitled/tools/README.md)
-    * [airgeddon](technologies/untitled/tools/airgeddon.md)
-    * [horst](technologies/untitled/tools/horst.md)
-  * [Papers](technologies/untitled/papers.md)
-* [VPN](technologies/vpn.md)
-* [VoIP](technologies/voip/README.md)
-  * [Intro](technologies/voip/intro.md)
-  * [Протокол SIP](technologies/voip/protokol-sip.md)
-  * [Пентест](technologies/voip/pentest.md)
-* [WebRTC](technologies/webrtc.md)
 
 ## Learning
 
