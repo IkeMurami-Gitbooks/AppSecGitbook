@@ -202,9 +202,23 @@ Mitigations:
 
 ## Mitigations
 
-From OWASP: [https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site\_Request\_Forgery\_Prevention\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site\_Request\_Forgery\_Prevention\_Cheat\_Sheet.html)
+### Общие подходы
 
-### Если есть встроенный механизм защиты CSRF — использовать его
+* From OWASP: [https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site\_Request\_Forgery\_Prevention\_Cheat\_Sheet.html](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site\_Request\_Forgery\_Prevention\_Cheat\_Sheet.html)
+* Если есть встроенный механизм защиты CSRF — использовать его
+* Использовать сложные запросы (не Simple Requests, а с Preflight Requests). Например через Content-Type: application/json + следить за CORS
+* Выписка через API-ручку / это CSRF для SPA тк другие способы доставить CSRF в SPA сложны (считай их нет) (нужно быть уверенным в алгоритме)
+* Время жизни токена — минуту или сутки?
+* Если подставляем в верстку, можно попробовать сделать одноразовые токены с привязкой к действию. CSRF токены должны быть привязаны к пользователю
+* Samesite: это решение, но ломает кросдоменное взаимодействие
+* Если выбрали токены (OAuth, например), а не куки — от CSRF защищены
+
+Best practices:
+
+* Используйте CSRF-токены для модифицирующих запросов
+* Не делайте модифицирующие GET-ручки
+* Реализовывать проверку через Middleware, (@decorator хуже)
+* Для мобильного API не оставьте случайно Cookie Auth (иногда бывает так)
 
 ### Stateful Software
 
@@ -220,7 +234,7 @@ CSRF tokens should be:
 
 Есть техника Double Submit Cookie.&#x20;
 
-Клиент с каждым запросом шлет случайное значение в куках и то же значение в теле запроса: на стороне сервера эти значения сверяются между собой. При первом посещении сайта, это случайное значение отдается клиенту без привязки к сессии. Можно добавлять шифрование этого токены в сессии или использовании HMAC.&#x20;
+Клиент с каждым запросом шлет случайное значение в куках и то же значение в теле запроса (или в заголовках): на стороне сервера эти значения сверяются между собой. При первом посещении сайта, это случайное значение отдается клиенту без привязки к сессии. Можно добавлять шифрование этого токены в сессии или использовании HMAC.&#x20;
 
 ## Links & Papers
 
