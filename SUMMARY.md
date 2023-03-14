@@ -63,22 +63,6 @@
   * [bypass dot](payloads/bypass-something/bypass-dot.md)
   * [40x bypass](payloads/bypass-something/40x-bypass.md)
 
-## Network
-
-* [Tools](network/tools/README.md)
-  * [Bettercap](network/tools/bettercap.md)
-  * [Impacket](network/tools/impacket.md)
-  * [MiTM](network/tools/mitm.md)
-  * [Proxy](network/tools/proxy/README.md)
-    * [mitmproxy](network/tools/proxy/mitmproxy.md)
-    * [broxy](network/tools/proxy/broxy.md)
-    * [netty](network/tools/proxy/netty.md)
-    * [proxenet](network/tools/proxy/proxenet.md)
-    * [ZAP](network/tools/proxy/zap.md)
-    * [PolarProxy](network/tools/proxy/polarproxy.md)
-  * [Responder](network/tools/responder.md)
-  * [Wireshark](network/tools/wireshark.md)
-
 ## AppSec / WEB <a href="#appsec" id="appsec"></a>
 
 * [Common](appsec/common/README.md)
