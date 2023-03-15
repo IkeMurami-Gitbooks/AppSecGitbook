@@ -1,17 +1,20 @@
 # CodeQL Packs
 
-Note: The CodeQL package management functionality, including CodeQL packs, is currently available as a **beta** release and is subject to change.
+## Create CodeQL pack
 
-CodeQL packs are used to create, share, depend on, and run CodeQL queries and libraries. You can publish your own CodeQL packs and download packs created by others. CodeQL packs contain queries, library files, query suites, and metadata.
+### Пример
 
-There are two types of CodeQL packs: **query** packs and **library** packs.
+Создаем Query pack:
 
-* Query packs are designed to be run. When a query pack is published, the bundle includes all the transitive dependencies and a compilation cache. This ensures consistent and efficient execution of the queries in the pack.
-* Library packs are designed to be used by query packs (or other library packs) and do not contain queries themselves. The libraries are not compiled and there is no compilation cache included when the pack is published.
+```
+codeql pack init ikemurami/my-pack
+cd my-pack
+```
 
-The standard CodeQL packages for all supported languages are published in the [GitHub Container registry](https://github.com/orgs/codeql/packages). The [CodeQL repository](https://github.com/github/codeql) contains source files for the standard CodeQL packs for all supported languages.
+Добавляем зависимостей (может выдать ошибку о несовместимости версий — пробуем еще раз):
 
-Два основных файла, определяющий пакет, — `qlpack.yml` (отвечает за пакет) и `codeql-pack.lock.yml` (отвечает за тесты). Подробнее про их настройку [тут](https://codeql.github.com/docs/codeql-cli/about-codeql-packs/).
+<pre><code><strong>codeql pack add codeql/javascript-all codeql/javascript-queries
+</strong></code></pre>
 
 ### Creating and working with CodeQL packs via CodeQL CLI
 
@@ -34,3 +37,18 @@ codeql pack add <scope>/<name>@x.x.x <scope>/<other-name>
 Или можно вручную подправить `qlpack.yml` и сделать `codeql pack install`.
 
 Как опубликовать и использовать ваш CodeQL Pack: [https://codeql.github.com/docs/codeql-cli/publishing-and-using-codeql-packs/](https://codeql.github.com/docs/codeql-cli/publishing-and-using-codeql-packs/)
+
+## Query and library packs
+
+Note: The CodeQL package management functionality, including CodeQL packs, is currently available as a **beta** release and is subject to change.
+
+CodeQL packs are used to create, share, depend on, and run CodeQL queries and libraries. You can publish your own CodeQL packs and download packs created by others. CodeQL packs contain queries, library files, query suites, and metadata.
+
+There are two types of CodeQL packs: **query** packs and **library** packs.
+
+* Query packs are designed to be run. When a query pack is published, the bundle includes all the transitive dependencies and a compilation cache. This ensures consistent and efficient execution of the queries in the pack.
+* Library packs are designed to be used by query packs (or other library packs) and do not contain queries themselves. The libraries are not compiled and there is no compilation cache included when the pack is published.
+
+The standard CodeQL packages for all supported languages are published in the [GitHub Container registry](https://github.com/orgs/codeql/packages). The [CodeQL repository](https://github.com/github/codeql) contains source files for the standard CodeQL packs for all supported languages.
+
+Два основных файла, определяющий пакет, — `qlpack.yml` (отвечает за пакет) и `codeql-pack.lock.yml` (отвечает за тесты). Подробнее про их настройку [тут](https://codeql.github.com/docs/codeql-cli/about-codeql-packs/).
