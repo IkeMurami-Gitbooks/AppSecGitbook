@@ -417,6 +417,7 @@
   * [Tools](technologies/scm/tools.md)
   * [Vulns](technologies/scm/vulns.md)
 * [Honeypots](technologies/honeypots.md)
+* [ChatGPT](technologies/chatgpt.md)
 
 ## Learning
 
