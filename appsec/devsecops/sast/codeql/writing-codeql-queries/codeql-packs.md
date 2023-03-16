@@ -16,6 +16,12 @@ cd my-pack
 <pre><code><strong>codeql pack add codeql/javascript-all codeql/javascript-queries
 </strong></code></pre>
 
+Чтобы создать Lock-файл (без него VSCode не будет видеть зависимости у QL-файлов), запустим команду установки зависимостей:
+
+```
+codeql pack install
+```
+
 ### Creating and working with CodeQL packs via CodeQL CLI
 
 Source: [https://codeql.github.com/docs/codeql-cli/creating-and-working-with-codeql-packs](https://codeql.github.com/docs/codeql-cli/creating-and-working-with-codeql-packs)
