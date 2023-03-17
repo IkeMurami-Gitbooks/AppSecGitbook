@@ -26,3 +26,6 @@ link: [https://portswigger.net/web-security/cross-site-scripting](https://portsw
 * &#x20;**Use appropriate response headers.** To prevent XSS in HTTP responses that aren't intended to contain any HTML or JavaScript, you can use the `Content-Type` and `X-Content-Type-Options` headers to ensure that browsers interpret the responses in the way you intend.
 * &#x20;**Content Security Policy.** As a last line of defense, you can use Content Security Policy (CSP) to reduce the severity of any XSS vulnerabilities that still occur.
 
+[DOMPurify](https://github.com/cure53/DOMPurify) — норм библиотека для санитайзинга?
+
+[serialize-javascript ](https://www.npmjs.com/package/serialize-javascript)— безопасная сериализация JS-объектов в строку (чтобы html-сущности не нарушали контекст JS при вставке)
