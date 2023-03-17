@@ -1,5 +1,7 @@
 # Tools
 
+Abuse Trusted Types для DOM XSS: [https://github.com/filedescriptor/untrusted-types](https://github.com/filedescriptor/untrusted-types)
+
 ## domdig
 
 Инструмент для поиска DOM-based XSS в SPA.
