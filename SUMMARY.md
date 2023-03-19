@@ -97,6 +97,7 @@
   * [Business Logic Vuln](appsec/server-side-vulns/business-logic-vuln.md)
   * [CSV-injection](appsec/server-side-vulns/csv-injection.md)
   * [DDOS](appsec/server-side-vulns/ddos.md)
+  * [Dependency Confusion Attack](appsec/server-side-vulns/dependency-confusion-attack.md)
   * [Deserialization](appsec/server-side-vulns/deserialization-json-jndi-java/README.md)
     * [About](appsec/server-side-vulns/deserialization-json-jndi-java/about.md)
     * [JSON](appsec/server-side-vulns/deserialization-json-jndi-java/json.md)
