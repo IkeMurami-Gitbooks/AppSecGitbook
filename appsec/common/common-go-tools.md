@@ -135,7 +135,7 @@ Modlishka (Go)
 
 ## Другое
 
-Для отлова Blind OOB [https://github.com/projectdiscovery/interactsh](https://github.com/projectdiscovery/interactsh)
+Коллаборатор от ProjectDiscovery [https://github.com/projectdiscovery/interactsh](https://github.com/projectdiscovery/interactsh)
 
 реверс прокси, обход 2FA, тестовый фишинг - Modlishka
 
