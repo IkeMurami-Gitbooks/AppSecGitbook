@@ -135,7 +135,9 @@ Modlishka (Go)
 
 ## Другое
 
-Коллаборатор от ProjectDiscovery [https://github.com/projectdiscovery/interactsh](https://github.com/projectdiscovery/interactsh)
+Коллаборатор от ProjectDiscovery: [https://github.com/projectdiscovery/interactsh](https://github.com/projectdiscovery/interactsh)
+
+Нотификатор в тг, дискорд, слак и тп от ProjectDiscovery: [https://github.com/projectdiscovery/notify](https://github.com/projectdiscovery/notify)
 
 реверс прокси, обход 2FA, тестовый фишинг - Modlishka
 
