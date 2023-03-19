@@ -135,7 +135,8 @@ Modlishka (Go)
 
 ## Другое
 
-Коллаборатор от ProjectDiscovery: [https://github.com/projectdiscovery/interactsh](https://github.com/projectdiscovery/interactsh)
+Коллаборатор от ProjectDiscovery: [https://github.com/projectdiscovery/interactsh](https://github.com/projectdiscovery/interactsh)\
+Еще можно использовать [PipeDream](https://pipedream.com) цепочки.
 
 Нотификатор в тг, дискорд, слак и тп от ProjectDiscovery: [https://github.com/projectdiscovery/notify](https://github.com/projectdiscovery/notify)
 
