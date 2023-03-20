@@ -240,7 +240,7 @@
     * [About](appsec/devsecops/sast/about.md)
     * [SAST List](appsec/devsecops/sast/sast.md)
     * [Python: Bandit](appsec/devsecops/sast/python-bandit.md)
-    * [Semgrep](appsec/devsecops/sast/semgrep/README.md)
+    * [Semgrep](appsec/devsecops/sast/semgrep.md)
       * [Intro](appsec/devsecops/sast/semgrep/intro.md)
       * [Getting Started](appsec/devsecops/sast/semgrep/getting-started.md)
       * [Rulesets](appsec/devsecops/sast/semgrep/rulesets.md)
