@@ -17,3 +17,11 @@ Link: [https://github.com/returntocorp/semgrep](https://github.com/returntocorp/
 
 * [Semgrep Playground](https://semgrep.dev/editor) — платформа для проверки и шеринга правил
 * [Semgrep Registry](https://semgrep.dev/explore) — более 2к правил от сообщества для поиска уязвимостей, неточностей, ошибок в зависимостях&#x20;
+
+Поддерживает более 30 языков: [https://semgrep.dev/docs/#language-support](https://semgrep.dev/docs/#language-support).
+
+Среди них:
+
+* Go, Java, TS/TSX/JS/JSX
+* Kotlin, Rust
+* C/C++, Dart, Dockerfile, HTML, Solidity, Swift
