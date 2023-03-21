@@ -245,6 +245,7 @@
       * [Getting Started](appsec/devsecops/sast/semgrep/getting-started.md)
       * [Writing rules](appsec/devsecops/sast/semgrep/writing-rules/README.md)
         * [Pattern syntax](appsec/devsecops/sast/semgrep/writing-rules/pattern-syntax.md)
+        * [Rule syntax](appsec/devsecops/sast/semgrep/writing-rules/rule-syntax.md)
       * [Rulesets](appsec/devsecops/sast/semgrep/rulesets.md)
       * [Papers](appsec/devsecops/sast/semgrep/papers.md)
     * [CodeQL](appsec/devsecops/sast/codeql/README.md)
