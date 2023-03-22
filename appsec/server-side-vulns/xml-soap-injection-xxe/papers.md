@@ -12,3 +12,5 @@
 Набор payloads: [https://gist.github.com/staaldraad/01415b990939494879b4](https://gist.github.com/staaldraad/01415b990939494879b4)
 
 XXE Workshop: [https://gosecure.github.io/xxe-workshop/](https://gosecure.github.io/xxe-workshop/)
+
+Billion Laughs — [DoS атака](https://en.wikipedia.org/wiki/Billion\_laughs\_attack) на парсеры.
