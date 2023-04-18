@@ -410,6 +410,7 @@
 * [Покупка SIM-карт и номеров](technologies/pokupka-sim-kart.md)
 * [Банковские карты и платежи (cards & payments & processing)](technologies/bankovskie-karty.md)
 * [ATM](technologies/atm.md)
+* [Программы лояльности](technologies/loyalty.md)
 * [Digital Rights Management (DRM)](technologies/digital-rights-management-drm.md)
 * [ELK — Elasticsearch, Logstash, Kibana](technologies/elk-elasticsearch-logstash-kibana/README.md)
   * [About](technologies/elk-elasticsearch-logstash-kibana/about.md)
