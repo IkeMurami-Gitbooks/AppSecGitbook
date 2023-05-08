@@ -50,7 +50,7 @@
 `GET /?param=1 HTTP/1.1`\
 `Host: innocent-website.com`\
 `Pragma: akamai-x-get-cache-key`\
-``\
+\
 `HTTP/1.1 200 OK`\
 `X-Cache-Key: innocent-website.com/?param=1`
 

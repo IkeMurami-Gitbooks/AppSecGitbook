@@ -89,7 +89,7 @@ A JSP shell can also be uploaded to `$JETTY_BASE/work/` which is normally used a
 
 If we somehow manage to find out what temporary directory has been created, we can try to upload a JSP shell via: `$JETTY_BASE/work/"jetty-"+host+"-"+port+"-"+resourceBase+"-_"+context+"-"+virtualhost+"-"/webapps`
 
-``![](<../../../.gitbook/assets/изображение (4).png>)``
+![](<../../../.gitbook/assets/изображение (4).png>)
 
 Next we open the URL with the required context in our browser and we have RCE.
 

