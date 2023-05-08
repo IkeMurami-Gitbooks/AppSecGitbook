@@ -225,6 +225,7 @@
       * [Разное](appsec/technics/osint/tools/raznoe/README.md)
         * [База CommonCrawl](appsec/technics/osint/tools/raznoe/baza-crawl-html-data.md)
         * [ТОП сайтов](appsec/technics/osint/tools/raznoe/top-saitov.md)
+    * [Certificate Transparency](appsec/technics/osint/certificate-transparency.md)
     * [Papers](appsec/technics/osint/papers.md)
   * [Кодировки](appsec/technics/kodirovki.md)
   * [Web Application Testing with CryptoPro Sign](appsec/technics/web-application-with-cryptopro-sign.md)
