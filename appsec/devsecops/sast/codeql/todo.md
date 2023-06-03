@@ -19,3 +19,9 @@ Challenges:\
 * [https://gist.github.com/japroc/16e86edd0863cc3e2f2365d931937488](https://gist.github.com/japroc/16e86edd0863cc3e2f2365d931937488)
 
 Сообщество в тг: [https://t.me/codeql](https://t.me/codeql)
+
+И еще несколько ссылок:
+
+* [https://www.youtube.com/watch?v=-bJ2Ioi7Icg\
+  https://github.com/github/codeql-dubbo-workshop/\
+  https://securitylab.github.com/research/apache-dubbo/](https://www.youtube.com/watch?v=-bJ2Ioi7Icghttps://github.com/github/codeql-dubbo-workshop/https://securitylab.github.com/research/apache-dubbo/)
