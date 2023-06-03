@@ -70,6 +70,7 @@
   * [Common Go Tools](appsec/common/common-go-tools.md)
   * [Guidelines](appsec/common/guidelines.md)
 * [Automated WebApp Pentest](appsec/automated-webapp-pentest/README.md)
+  * [Other tools](appsec/automated-webapp-pentest/other-tools.md)
   * [Burp Suite](appsec/automated-webapp-pentest/burp-suite/README.md)
     * [Режимы в Intruder](appsec/automated-webapp-pentest/burp-suite/rezhimy-v-intruder.md)
     * [Как заводить крякнутый](appsec/automated-webapp-pentest/burp-suite/kak-zavodit-kryaknutyi.md)
