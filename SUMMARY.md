@@ -177,6 +177,7 @@
     * [Description](appsec/client-side-vulns/xss/description.md)
     * [Attacks](appsec/client-side-vulns/xss/attacks/README.md)
       * [Exploiting XSS](appsec/client-side-vulns/xss/attacks/exploiting-xss.md)
+      * [GTM (and other TMS) XSS](appsec/client-side-vulns/xss/attacks/gtm-and-other-tms-xss.md)
       * [Через SVG](appsec/client-side-vulns/xss/attacks/cherez-svg.md)
       * [DOM-based vulnerabilities](appsec/client-side-vulns/xss/attacks/dom-based-vulnerabilities/README.md)
         * [About](appsec/client-side-vulns/xss/attacks/dom-based-vulnerabilities/about.md)
