@@ -8,6 +8,6 @@
 * OFFZONE 2022: Уязвимости в платежных приложениях: [https://youtu.be/wlRRIpADbS8](https://youtu.be/wlRRIpADbS8)
 *
 
-{% file src="../../.gitbook/assets/common_security_issues_in_financially-orientated_web.pdf.pdf" %}
+{% file src="../.gitbook/assets/common_security_issues_in_financially-orientated_web.pdf.pdf" %}
 
-{% file src="../../.gitbook/assets/20_лет_проблем_приема_платежей.pdf" %}
+{% file src="../.gitbook/assets/20_лет_проблем_приема_платежей.pdf" %}
