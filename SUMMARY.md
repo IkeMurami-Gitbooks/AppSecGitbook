@@ -415,6 +415,7 @@
   * [Kind of payments](technologies/payments/kind-of-payments.md)
   * [3DS](technologies/banks-and-payments/3ds.md)
   * [PCI DSS](technologies/payments/pci-dss.md)
+  * [Эквайринг](technologies/banks-and-payments/acquiring.md)
   * [Vulnerabilities](technologies/banks-and-payments/vulnerabilities.md)
   * [Доклады](technologies/bankovskie-karty.md)
   * [ATM](technologies/atm.md)
