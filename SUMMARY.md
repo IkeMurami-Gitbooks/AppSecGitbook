@@ -343,6 +343,7 @@
     * [Cross-Origin Resource Sharing (CORS)](technologies/web/http-web/cross-origin-resource-sharing-cors.md)
     * [Типы запросов](technologies/web/http-web/tipy-zaprosov.md)
     * [First Party Sets](technologies/web/http-web/first-party-sets.md)
+    * [Subresource Integrity (SRI)](technologies/web/http-web/subresource-integrity-sri.md)
     * [HTTP Reverse Proxy](technologies/web/http-web/http-reverse-proxy.md)
     * [Papers & Resources](technologies/web/http-web/papers-and-resources.md)
   * [CMS](technologies/web/cms/README.md)
