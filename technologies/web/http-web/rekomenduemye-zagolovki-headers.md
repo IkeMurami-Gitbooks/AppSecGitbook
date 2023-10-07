@@ -6,7 +6,7 @@
 * `Referer-Policy`
 * `Permissions-Policy`
 * `X-Frame-Options: DENY` (или `SAMEORIGIN` / `ALLOW-FROM ...` в случае необходимости)
-* `X-Content-Type-Options: nosniff`
+* `X-Content-Type-Options: nosniff` — браузер не пытается угадать `Content-Type`, а выбирает тот, который установлен в заголовке изначально
 * `X-XSS-Protection: 1; mode=block`
 
 Дополнительные рекомендации по предотвращению данного типа уязвимостей приведены в [документе Mozilla](https://infosec.mozilla.org/guidelines/web\_security).
