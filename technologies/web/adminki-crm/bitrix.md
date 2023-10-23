@@ -121,6 +121,10 @@ $ /root/menu.sh
 
 Про битрикс с точки зрения экосистемы: [https://habr.com/ru/post/282333/](https://habr.com/ru/post/282333/)
 
+## Заход через регистрацию
+
+Link: [https://t.me/webpwn/345](https://t.me/webpwn/345)
+
 ## Open Redirect&#x20;
 
 Будет предупреждение. Как бы все ок, но все же
