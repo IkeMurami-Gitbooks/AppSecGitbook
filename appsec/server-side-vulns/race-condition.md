@@ -1,5 +1,13 @@
 # Race Condition
 
+## Типичные примеры
+
+* transfer/withdraw
+* redeem voucher
+* apply discount
+* review/rate
+* login
+
 ## Base PoC
 
 ```
@@ -23,5 +31,7 @@ racepwn (Python): [https://github.com/racepwn/racepwn](https://github.com/racepw
 
 [https://bo0om.ru/race-condition-ru](https://bo0om.ru/race-condition-ru) и соотв тулза racepwn к ней
 
-
+Доклад и статья Джеймса Китла:\
+\- [https://www.youtube.com/watch?v=tKJzsaB1ZvI](https://www.youtube.com/watch?v=tKJzsaB1ZvI)\
+\- [https://portswigger.net/research/smashing-the-state-machine](https://portswigger.net/research/smashing-the-state-machine)
 
