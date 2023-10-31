@@ -27,6 +27,12 @@
 </html>
 ```
 
+## MessageChannel
+
+Это расширение для Post Messages, с помощью которого можно не ограничивать CORS'ы.
+
+TODO: почитать подробнее [https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel](https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel)
+
 ## К чему может привести неправильное использование
 
 ### XSS
