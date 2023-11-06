@@ -10,6 +10,8 @@
 * [Methodologies](metodologii/README.md)
   * [Security Check Lists](metodologii/security-check-lists.md)
   * [Security Cheat Sheets](methodologies/security-cheat-sheets.md)
+  * [MNA Process](methodologies/mna-process.md)
+  * [DD Process](methodologies/dd-process.md)
   * [Pentest](metodologii/pentest/README.md)
     * [Threat Modeling](methodologies/pentest/threat-modeling.md)
     * [MITRE ATT\&CK](metodologii/pentest/mitre-att-and-ck.md)
