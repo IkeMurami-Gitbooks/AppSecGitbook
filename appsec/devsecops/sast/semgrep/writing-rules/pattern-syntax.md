@@ -38,6 +38,28 @@ rules:
     severity: WARNING
 ```
 
+Можно выполнять проверки по ним:
+
+```
+rules:
+ - id: test
+   patterns:
+   - pattern: $TEST
+   - metavariable-comparison:
+     metavariable: $TEST
+     comparison: $TEST <= 1
+   message: $TEST
+
+```
+
+Тут используется базовый язык сравнения в Python:
+
+```
+- metavariable-comparison:
+  metavariable: $TEST
+  comparison: not ($TEST in [1, 2, 3]) AND $TEST != 1
+```
+
 ## Imports
 
 Semgrep не видит aliases, но заменяет их типами, например:

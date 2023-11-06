@@ -11,6 +11,10 @@
 
 {% file src="../.gitbook/assets/common_security_issues_in_financially-orientated_web.pdf.pdf" %}
 
+Status: начинал читать
+
 ## Kaimi & Bo0oM
+
+Status: прочел
 
 {% file src="../.gitbook/assets/20_лет_проблем_приема_платежей.pdf" %}
