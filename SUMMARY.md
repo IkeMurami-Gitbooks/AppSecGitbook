@@ -193,6 +193,7 @@
       * [CSS injection](appsec/client-side-vulns/xss/attacks/css-injection.md)
       * [jQuery XSS](appsec/client-side-vulns/xss/attacks/jquery-xss.md)
       * [AngularJS Sandbox Escape](appsec/client-side-vulns/xss/attacks/angularjs-sandbox-escape.md)
+    * [Gadgets](appsec/client-side-vulns/xss/gadgets.md)
     * [Tools](appsec/client-side-vulns/xss/tools.md)
     * [Cheat Sheets](appsec/client-side-vulns/xss/cheat-sheets.md)
     * [Papers](appsec/client-side-vulns/xss/papers.md)
