@@ -13,6 +13,7 @@
   * [MNA Process](methodologies/mna-process.md)
   * [DD Process](methodologies/dd-process.md)
   * [Написание политик](methodologies/napisanie-politik.md)
+  * [Какие-то модные прикладные инструменты](methodologies/kakie-to-modnye-prikladnye-instrumenty.md)
   * [Pentest](metodologii/pentest/README.md)
     * [Threat Modeling](methodologies/pentest/threat-modeling.md)
     * [MITRE ATT\&CK](metodologii/pentest/mitre-att-and-ck.md)
