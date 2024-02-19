@@ -41,6 +41,8 @@ Basic:
 
 Link: [https://jinja.palletsprojects.com/en/3.1.x/](https://jinja.palletsprojects.com/en/3.1.x/)
 
+Защита: [sandbox](https://jinja.palletsprojects.com/en/3.1.x/sandbox/) + whitelists
+
 ## Ruby
 
 ### ERB
