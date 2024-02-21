@@ -101,6 +101,7 @@
       * [Potator](appsec/server-side-vulns/bruteforce/tools/potator.md)
   * [Business Logic Vuln](appsec/server-side-vulns/business-logic-vuln.md)
   * [CSV-injection](appsec/server-side-vulns/csv-injection.md)
+  * [DOS](appsec/server-side-vulns/dos.md)
   * [DDOS](appsec/server-side-vulns/ddos.md)
   * [Dependency Confusion Attack](appsec/server-side-vulns/dependency-confusion-attack.md)
   * [Deserialization](appsec/server-side-vulns/deserialization-json-jndi-java/README.md)
