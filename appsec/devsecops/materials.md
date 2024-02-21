@@ -12,4 +12,8 @@ Zero Touch Production (ZTP) – принцип, озвученный Google, п�
 
 ## SBOM
 
-TODO: Trivy, cdxgen, cyclonedx, gemnasium
+SBOM — Software Bill of Materials
+
+TODO: Trivy, cdxgen, gemnasium
+
+Форматы для SBOM: cyclonedx, spdx, ...
