@@ -54,6 +54,8 @@ Public BB (это тот же список, но github?): [https://github.com/p
 
 На [disclose.io](https://disclose.io) можно поискать self hosted компании.
 
+Google: [https://bughunters.google.com/](https://bughunters.google.com/)
+
 ## Как искать платформы и bug bounty программы
 
 Google: `"Bug Bounty" site:ru`.
