@@ -12,6 +12,8 @@ mobsfscan = semgrep + libsast: [https://github.com/MobSF/mobsfscan](https://gith
 
 ## Others
 
+joern (как codeql? но open source) [https://github.com/joernio/joern](https://github.com/joernio/joern)
+
 Qodana (PHP): [https://blog.jetbrains.com/qodana/2023/03/secure-your-php-code-with-taint-analysis-by-qodana/](https://blog.jetbrains.com/qodana/2023/03/secure-your-php-code-with-taint-analysis-by-qodana/)
 
 Code Pulse (C#/Scala/..) - проект OWASP для анализа приложений (C#/Java) на предмет безопасного кода (Возможно, в процессе выполнения. Т.е. это DAST). site:[ https://code-pulse.com](https://code-pulse.com). git: [https://github.com/codedx/codepulse](https://github.com/codedx/codepulse)
