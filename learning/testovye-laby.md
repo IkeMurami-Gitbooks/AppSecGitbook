@@ -4,7 +4,12 @@
 
 * [SpbCTF](https://spb.ctf.su/news/)
 * [HacksPlaining](https://www.hacksplaining.com/lessons)
-*
+* [Hackthebox](https://www.hackthebox.eu/)
+* A lot information about XSS&#x20;
+  * Blog [https://brutelogic.com.br/blog/](https://brutelogic.com.br/blog/)
+  * XSS Lab [http://prompt.ml/0](http://prompt.ml/0)
+  * XSS Challenges by yamagata21: [https://xss-quiz.int21h.jp/](https://xss-quiz.int21h.jp/)
+* Challenges: [https://alf.nu/](https://alf.nu/)
 
 ## Огромная хуева туча
 
@@ -29,7 +34,6 @@ https://hack.me
 http://www.cipher-ctf.org/CaptureTheFlag.php
 https://www.cybergamesuk.com/code-crackers
 https://atenea.ccn-cert.cni.es/home
-https://www.hackthebox.eu/
 http://ctfs.me/
 https://ctf365.com/
 https://overthewire.org/wargames
