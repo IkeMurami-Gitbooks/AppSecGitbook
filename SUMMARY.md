@@ -219,6 +219,7 @@
         * [Facebook / Instagram](appsec/technics/osint/tools/poisk-po-servisam/facebook-instagram.md)
         * [LinkedIn](appsec/technics/osint/tools/poisk-po-servisam/linkedin.md)
       * [Swiss Army Knife](appsec/technics/osint/tools/swiss-army-knife/README.md)
+        * [Bellingcat's Online Investigation Toolkit](appsec/technics/osint/tools/swiss-army-knife/bellingcats-online-investigation-toolkit.md)
         * [MS Threat Intelligence Platform](appsec/technics/osint/tools/swiss-army-knife/riskiq.md)
         * [foca/goca](appsec/technics/osint/tools/swiss-army-knife/foca-goca.md)
         * [spiderfoot](appsec/technics/osint/tools/swiss-army-knife/spiderfoot.md)
