@@ -452,7 +452,7 @@
 * [Компетенции](learning/kompetencii.md)
 * [Материалы SANS & Offensive Security](learning/untitled.md)
 * [Просто норм материалы/gitbooks по пентесту вцелом...](learning/prosto-norm-materialy-gitbooks....md)
-* [Playground Labs](learning/testovye-laby.md)
+* [Platforms & Playground Labs](learning/testovye-laby.md)
 * [Бумажная ИБ](learning/bumazhnaya-ib/README.md)
   * [Информация Общая](learning/bumazhnaya-ib/informaciya-obshaya.md)
   * [Иерархия (виды) информации](learning/bumazhnaya-ib/ierarkhiya-vidy-informacii.md)

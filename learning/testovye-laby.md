@@ -1,4 +1,10 @@
-# Playground Labs
+# Platforms & Playground Labs
+
+## Платформы
+
+* [SpbCTF](https://spb.ctf.su/news/)
+* [HacksPlaining](https://www.hacksplaining.com/lessons)
+*
 
 ## Огромная хуева туча
 
