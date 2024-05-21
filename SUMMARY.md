@@ -15,6 +15,7 @@
   * [Написание политик](methodologies/napisanie-politik.md)
   * [Какие-то модные прикладные инструменты](methodologies/kakie-to-modnye-prikladnye-instrumenty.md)
   * [Pentest](metodologii/pentest/README.md)
+    * [BlackBox vs GreyBox vs WhiteBox](methodologies/pentest/blackbox-vs-greybox-vs-whitebox.md)
     * [Threat Modeling](methodologies/pentest/threat-modeling.md)
     * [MITRE ATT\&CK](metodologii/pentest/mitre-att-and-ck.md)
     * [OSSTMM](metodologii/pentest/osstmm.md)
