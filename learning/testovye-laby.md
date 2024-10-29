@@ -11,6 +11,12 @@
   * XSS Challenges by yamagata21: [https://xss-quiz.int21h.jp/](https://xss-quiz.int21h.jp/)
 * Challenges: [https://alf.nu/](https://alf.nu/)
 
+## Security Coding Platforms
+
+* [https://startx.team/products/start-edu](https://startx.team/products/start-edu)
+* [https://secdim.com/](https://secdim.com/)
+* [https://github.com/yandex/securitygym](https://github.com/yandex/securitygym)
+
 ## Огромная хуева туча
 
 mindmap: [https://www.amanhardikar.com/mindmaps/Practice.html](https://www.amanhardikar.com/mindmaps/Practice.html)
